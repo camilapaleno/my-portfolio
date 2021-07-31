@@ -1,0 +1,181 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Camila Paleno</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
+
+    <script src="rellax.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+
+<body style="background-color: #dbe8e8;">
+    
+    <nav class="sticky">
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+    
+        <ul>
+            <li><a href=#><h3>HOME</h3></a></li>
+            <li><a href="aboutme.html"><h3>ABOUT ME</h3></a></li>
+            <li><a href="contact.html"><h3>CONTACT</h3></a></li>
+        </ul>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        //hamburger menu
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+    <script>
+        //sticky topnav
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementsById("topnav");
+        var sticky = navbar.offsetTop;
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+            }
+    </script>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#webdesign"><h3 class="fade-in-left">WEB DESIGN</h3></a></li>
+            <li><a href="#productlifestyle"><h3 class="fade-in-left--1">PRODUCT/LIFESTYLE PHOTO</h3></a></li>
+            <li><a href="#portraitevent"><h3 class="fade-in-left--2">PORTRAIT/EVENT PHOTO</h3></a></li>
+            <li><a href="#"><h3 class="fade-in-left--3">PROMOTIONAL VIDEO (coming soon)</h3></a></li>
+        </ul>
+    </div>
+
+    <div id="parallax">
+        <div id="head" style="height: 300px; padding-top: 150px; overflow: hidden;"></div>
+        <div id="mobile-head-REDO"><img src="/resources/img/CAMILAPALENO.png"></div>
+        <div id="scroll-REDO"><img src="/resources/img/SCROLL.png"></div>
+        <script src="lottie.js"></script>
+        <script src="script.js"></script>
+    </div>
+
+    <script>
+    var rellax = new Rellax('.rellax');
+    </script>
+
+
+
+
+
+
+
+
+<webdesign class="row" id="webdesign">
+
+    <div id="webscript" style="overflow: hidden; height: 80px; margin-top: 80px;"></div><script src="lottie.js"></script><script src="script.js"></script>
+    
+    <text class="column">
+        <break><br><br><br><br></break>
+        <p style="font-size: smaller;">I use html and css to design and develop websites that are desktop and mobile friendly.</p>
+        <p style="font-size: smaller;">I also can design animations and graphics for your website using Adobe Photoshop, Illustrator, and After Effects, like the computer + phone. I use bodymovin and lottie to add my animations to websites.</p>
+        <a href="web.html"><p style="font-size: smaller;"> 》Click here to see my web design portfolio.《</p></a>
+    </text>
+    
+    <picture class="column">
+        <div id="anim" style="overflow: hidden; height: 400px;"></div><script src="lottie.js"></script><script src="script.js"></script>
+    </picture>
+
+</webdesign>
+
+<product class="row" id="productlifestyle">
+    <div id="productscript" style="overflow: hidden; height: 80px; margin-top: 100px;"></div><script src="lottie.js"></script><script src="script.js"></script>
+    <text class="column">
+        <break><br><br><br><br></break>
+        <p style="font-size: smaller;">I take photos of products in a studio setting and in lifestyle settings. Photos are typically used for website content and social media.</p>
+        <p style="font-size: smaller;">I've worked with various food and beverage compaies, including Kickback Coffee and Truronia.</p>
+        <a href="https://camilapaleno.wixsite.com/photo/product"><p style="font-size: smaller;">》Click here to be taken to my product photography portfolio.《</p></a>
+        <br>
+    </text>
+    <picture class="column">
+        <img src="./resources/img/product--collage.png">
+    </picture>
+</product>
+
+<portrait class="row" id="portraitevent">
+    <div id="portraitscript" style="overflow: hidden; height: 80px; margin-top: 100px;"></div><script src="lottie.js"></script><script src="script.js"></script>
+    <text class="column">
+        <break><br><br><br><br></break>
+        <p style="font-size: smaller;">I've been taking portraits since I was 14 years old. I currently work at the UCLA Photo Studio where we take professional photos for graduation and personal use. I use a Nikon D750 full frame DSLR both in and out of the studio.</p>
+        <p style="font-size: smaller;">I also take photos for special events, including Prom and Graduation.</p>
+        <a href="https://camilapaleno.wixsite.com/photo/portrait"><p style="font-size: smaller;">》Click here to be taken to my portrait photography portfolio.《</p></a>
+        <br>
+    </text>
+    <picture class="column">
+        <img src="./resources/img/portrait--collage.png">
+    </picture>
+</portrait>
+
+<br>
+<br>
+<br>
+
+<div class="footer">
+    <a href="#parallax"><i class="fa fa-angle-double-up" aria-hidden="true"></i><p>⠀⠀back to top⠀⠀</p><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+  </div>
+</body>
+
+
+<script>
+(function () {
+// parallax
+document.addEventListener("mousemove", parallax);
+const elem = document.querySelector("#parallax");
+
+function parallax(e) {
+    let _w = window.innerWidth / 2;
+    let _h = window.innerHeight / 2;
+    let _mouseX = e.clientX;
+    let _mouseY = e.clientY;
+    let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${
+    50 - (_mouseY - _h) * 0.01
+    }%`;
+    let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${
+    50 - (_mouseY - _h) * 0.02
+    }%`;
+    let _depth3 = `${50 - (_mouseX - _w) * 0.03}% ${
+    50 - (_mouseY - _h) * 0.03
+    }%`;
+    let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+    console.log(x);
+    elem.style.backgroundPosition = x;
+}
+})();
+</script>
+
+
+
+
+<script src="./resources/js/rellax.min.js"></script>
+<script>
+var rellax = new Rellax('.rellax', {
+    center: true
+});
+</script>
+
+
+
+</html>
