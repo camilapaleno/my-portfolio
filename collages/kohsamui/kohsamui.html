@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+
+<head>
+    
+    <title>Koh Samui Collage</title>
+    <link href="../css/collage.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1ca0213f0.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
+
+    <script src="./resources/js/animation.js"></script>
+    <script src="./resources/js/lottie.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../../resources/img/leaf.ico">
+
+    <meta property="og:image" content="https://imcamila.com/preview.png"/>
+    <meta name="description" content="Clean and modern website design and development for your business.">
+    <meta property="og:title" content="Web Design and Development"/>
+    <meta property="og:url" content="https://www.imcamila.com" />
+    <meta property="og:description" content="Clean and modern website design and development for your business.">
+    
+    
+    <style>
+        body {background-color: #F5F6F7;}
+    </style>
+
+    <script>
+$(function(){  // $(document).ready shorthand
+  $('.monster').fadeIn('slow');
+});
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight()/8;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},1500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    </script>
+</head>
+
+<body>
+    <a href="../../index.html"><p id="back"><i class="fas fa-long-arrow-alt-left"></i> back</p></a>
+    <div id="text">
+        <h1>Koh Samui, 2019</h1>
+        <p>In September of 2019, I flew from L.A. to Shanghai to Bangkok, and finally to an island in the Gulf of Thailand called Koh Samui. I took a motorbike around the island and a couple ferries to nearby islands like Koh Phangan and Koh Tao.</p>
+        <br><br>
+        <p id="scroll">scroll<br><i class="fas fa-long-arrow-alt-down"></i></p>
+    </div>
+    
+    
+
+    <img src="kohsamui_1.png" class="hideme">
+    <img src="kohsamui_5.png" class="hideme">
+    <img src="kohsamui_2.png" class="hideme">
+    <img src="kohsamui_3.png" class="hideme">
+    <img src="kohsamui_4.png" class="hideme">
+    <img src="kohsamui_6.png" class="hideme">
+</body>
+
+</html>

@@ -38,3 +38,4 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: 'resources/js/circle.json'
 })
+
