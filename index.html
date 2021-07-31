@@ -5,15 +5,15 @@
 <head>
     
     <title>Camila Paleno</title>
-    <!--<link href="./resources/css/loader.css" type="text/css" rel="stylesheet">-->
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/intro.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1ca0213f0.js" crossorigin="anonymous"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta http-equiv="X-AU-compatible" content="ie=edge">
 
-    <script src="./resources/js/main.js"></script>
+    <script src="./resources/js/animation.js"></script>
+    <script src="./resources/js/lottie.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,130 +28,16 @@
 </head>
 
 <body>
-    <!--<div class="loader">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>  -->
-    <script>//fadein
-        $(window).on("load",function() {
-            $(window).scroll(function() {
-            var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-            $(".fade").each(function() {
-                /* Check the location of each desired element */
-                var objectBottom = $(this).offset().top + $(this).outerHeight()/2;
-                
-                /* If the element is completely within bounds of the window, fade it in */
-                if (objectBottom <= windowBottom) { //object comes into view (scrolling down)
-                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-                } else { //object goes out of view (scrolling up)
-                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
-                }
-            });
-            }).scroll(); //invoke scroll-handler on page-load
-        });
-    </script>
 
-    <div id="parallax" class="fade-in"><script src="./resources/js/parallax.js"></script></div>
-    <section class="intro">
-        
-        <img class="moving-plane" src="./resources/img/plane.gif">
-
-        <h2 class="fade-in-slow">WEB DEVELOPMENT & DESIGN</h2>
-        <div id="camila"></div>
-        <div id="camilamobile"></div>
-
-    </section>
-
-    <nav><div id="navbar" class="fade-in">
-            <a href="#about" class="fade-in-slower">about</a>
-            <a href="#portfolio" class="fade-in-slower">portfolio</a>
-            <a href="#contact" class="fade-in-slower">contact</a>
-
-            <script>
-                window.onscroll = function() {myFunction()};
-                var navbar = document.getElementById("navbar");
-                var sticky = navbar.offsetTop;
-                function myFunction() {
-                  if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                  } else {
-                    navbar.classList.remove("sticky");
-                  }
-                }
-            </script>
-    </div></nav>
-    
-    <section class="content" style="position: relative;">
-
-        <div id="about"><div id="container">
-            <br><br><br><br>
-            <h1 class="fade">hello!</h1>
-            <br><br>
-            <p class="fade">My name is Camila. I'm a web developer who specializes in HTML and CSS.</p>
-            <br><br>
-            <p class="fade">I use HTML and CSS to design and develop websites that are desktop and mobile friendly. 
-                I also can design animations and graphics for your website using Adobe Photoshop, Illustrator, and After Effects.</p>
-                <div id="anim"></div>
-                <script src="resources/js/lottie.js"></script>
-                <script src="resources/js/animation.js"></script>
-        </div></div>
-
-       <div id="portfolio">
-           <div id="container">
-            <br><br>
-            <br><br>
-            <h1 class="fade">portfolio</h1>
-            <br><br>
-            <p class="fade">Click the images to check out some of my recent projects.</p>
-            <br><br>
-            <div class="row">
-                <div class="column">
-                  <a href="https://bxbbeanieball.com/"><img class="fade" src="./resources/img/wweb-bxb.png"></a>
-                  <div class="fade" style="text-align: right;"><br><br><br><br><br><h3>Version 1</h3><p><br>The very first version of my portfolio website. It has the same three layer parallax effect with a different scene.</p></div>
-                  <a href="http://www.carolynkamii.com/"><img class="fade" src="./resources/img/wweb-carolyn.png"></a>
-                </div>
-                <div class="column">
-                  <div class="fade" style="text-align: left;"><br><br><h3>Beanie Ball</h3><p><br>'Beanie Ball' is a beanie that can convert into a football. I designed and developed their website from scratch with html, css, and javascript.</p></div>
-                  <a href="./old/index.html"><img class="fade" src="./resources/img/wweb-camila.png"></a>
-                  <div class="fade" style="text-align: left;"><br><br><br><h3>Carolyn Kamii PR</h3><p><br>Carolyn Kamii is a public relations agent in Los Angeles. I designed a simple and clean website for her with html and css.<span><a href="./resources/Carolyn v2/index.html">Version 2</a></span></p></div>
-                </div>
-            </div>
-            <div class="mobile-box">
-                <div class="column">
-                    <div class="fade"><br><br><h3>Beanie Ball</h3><p><br>'Beanie Ball' is a beanie that can convert into a football. I designed and developed their website from scratch with html, css, and javascript.</p><br></div>
-                    <a href="https://bxbbeanieball.com/"><img class="fade" src="./resources/img/wweb-bxb.png"></a>
-                    <div class="fade"><br><br><h3>Version 1</h3><p><br>The very first version of my portfolio website. It has the same three layer parallax effect with a different scene.</p><br></div>
-                    <a href="./old/index.html"><img class="fade" src="./resources/img/wweb-camila.png"></a>
-                    <div class="fade"><br><br><h3>Carolyn Kamii PR</h3><p><br>Carolyn Kamii is a public relations agent in Los Angeles. I designed a simple and clean website for her with html and css.<span><a href="./resources/Carolyn v2/index.html">Version 2</a></span></p><br></div>
-                    <a href="http://www.carolynkamii.com/"><img class="fade" src="./resources/img/wweb-carolyn.png"></a><br><br><br><br><br>
-                    
-                  </div>
-            </div>
-           </div>
-        </div>
-
-        <div id="contact">
-            <div id="container">
-            <br><br><br><br>
-            <h1 class="fade">contact</h1>
-            <br><br>
-            <p class="fade">I'm looking for new projects to build my portfolio.</p>
-            <br><br><br>
-            <p class="fade">Give me a call at <span style="font-weight: 800;">323-450-7809</span> or send me an email at <span style="font-weight: 800;">camilapaleno@gmail.com</span>!</p>
-            <br><br>
-            <div class="icon fade">
-                <a href="https://www.yelp.com/biz/camila-paleno-web-development-los-angeles"><img src="./resources/img/icon-yelp.png" ></a>
-                <a href="https://camilapaleno.wixsite.com/photo"><img src="./resources/img/icon-camera.png"></a>
-                <a href="https://www.linkedin.com/in/camila-paleno-489386101"><img src="./resources/img/icon-linkedin.png"></a>
-            </div>
-            <br><br><br>
-            <p></p>
-        </div>
+<div class="container">
+    <div class="animation" id="intro"></div>
+    <script src="./resources/js/animation.js"></script>
+    <script src="./resources/js/lottie.js"></script>
+    <div class="enter">
+        <a href="./home.html"><p>ENTER <i class="fas fa-shoe-prints"></i></p></a>
     </div>
-    </section>
 
+</div>
 
 </body>
-
 </html>

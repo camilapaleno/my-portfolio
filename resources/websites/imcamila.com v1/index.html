@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    
+    <title>Camila Paleno</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-AU-compatible" content="ie=edge">
+
+    <script src="rellax.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./resources/img/9804cp.ico">
+    
+</head>
+
+
+<body style="background-color: #dbe8e8;">
+
+    <div id="parallax" class="fade-in">
+    </div>
+
+    <div id="header">
+        <img class="moving-plane" src="plane.gif">
+        <h2 id="webdevdesign" class="fade-in-slow">WEB DEVELOPMENT & DESIGN</h2>
+
+        <div id="camila"></div>
+        <div id="camilamobile"></div>
+                <script src="resources/js/lottie.js"></script>
+                <script src="resources/js/script.js"></script>
+        
+        <script>
+        (function () {
+        // parallax
+        document.addEventListener("mousemove", parallax);
+        const elem = document.querySelector("#parallax");
+        
+        function parallax(e) {
+            let _w = window.innerWidth / 2;
+            let _h = window.innerHeight / 2;
+            let _mouseX = e.clientX;
+            let _mouseY = e.clientY;
+            let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${
+            50 - (_mouseY - _h) * 0.01
+            }%`;
+            let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${
+            50 - (_mouseY - _h) * 0.02
+            }%`;
+            let _depth3 = `${50 - (_mouseX - _w) * 0.03}% ${
+            50 - (_mouseY - _h) * 0.03
+            }%`;
+            let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+            console.log(x);
+            elem.style.backgroundPosition = x;
+        }
+        })();
+        </script> 
+        <button class="fade-in-slower"><a href="portfolio.html"><h2>CLICK HERE</h2></a></button>
+    </div>
+
+   
+   
+
+</body>
+</html>

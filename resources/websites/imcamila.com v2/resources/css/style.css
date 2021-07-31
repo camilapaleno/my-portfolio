@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F2F2F2;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: Prata, 'Times New Roman', Times, serif;
+    font-size: 72px;
+    font-weight: 100;
+    color: #6C6565;
+}
+ 
+h2 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: Prata, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: 100;
+    color: #6C6565;
+}
+
+p {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    color: #6C6565;
+}
+
+a {
+    font-family: Prata, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+.content{
+    width: 100vw;
+}
+
+.content > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#about {
+    background-color: #6C6565;
+}
+
+#about #container{
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+    @media screen and (max-width: 900px){
+        #about #container{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+#about #container h1, #about #container p{
+     color: #f2f2f2;
+}
+
+    @media screen and (max-width: 540px) {
+        #about #container h1 {
+            font-size: 64px;
+        }
+        #about #container p {
+            font-size: 24px;
+        }
+    }
+
+#anim {
+    display: block;
+    width: 50%;
+    margin: 80px auto;
+}
+
+    @media screen and (max-width: 540px) {
+        #anim {
+            display: block;
+            width: 100%;
+            margin: 50px auto;
+        }
+    }
+
+#portfolio {
+    width: 90vw;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+
+#portfolio #container {
+    text-align: center;
+
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    }
+  
+.column {
+    flex: 50%;
+    }
+
+#portfolio #container img {
+    height: 350px;
+}
+
+#portfolio #container .column div {
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+.mobile-box {
+    display: none;     
+}
+
+    @media screen and (max-width: 1366px) {
+
+        #portfolio #container {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 1022px) {
+
+        .row {
+            display: none;
+            }
+        
+        #portfolio #container {
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .mobile-box {
+            display: block;
+        }
+
+        #portfolio #container .column div {
+            height: unset;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (max-width: 540px) {
+        #portfolio #container h1 {
+            font-size: 64px;
+        }
+        #portfolio #container p {
+            font-size: 24px;
+        }
+        #portfolio #container h3 {
+            font-size: 36px;
+        }
+        #portfolio #container img {
+            height: unset;
+            width: 90%;
+        }
+    }
+
+
+table img {
+    width: 150px;
+}
+
+table a {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 30px; 
+}
+
+#contact {
+    background-color: #6C6565;
+}
+
+#contact #container {
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+    @media screen and (max-width: 900px){
+        #contact #container{
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+
+#contact #container h1, #contact #container h2, #contact #container p {
+    color: #f2f2f2;
+}
+
+#contact #container img{
+    width: 50px;
+    display: inline-block;
+}
+
+#contact #container p{
+    display: inline-block;
+    vertical-align: top;
+}
+
+    @media screen and (max-width: 540px) {
+        #contact #container h1 {
+            font-size: 64px;
+        }
+        #contact #container p {
+            font-size: 20px;
+        }
+    }
+
+.icon {
+    display: inline-block;
+}
+
+#contact #container .icon img {
+    width: 100px
+}
+
+.icon img {
+    padding: 20px;
+}
+
+.icon img:hover{
+    filter:invert(100%);
+}
+
+@media screen and (max-width: 540px) {
+    #contact #container .icon img {
+        width: 50px;
+        padding: 10px;
+    }
+}
+
+
+/*FADE*/
+.fade
+{
+    opacity:1;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Error</title>
+  <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-AU-compatible" content="ie=edge">
+
+  <script src="rellax.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+
+<nav class="sticky">
+  <div class="toggle">
+      <i class="fa fa-bars menu" aria-hidden="true"></i>
+  </div>
+
+  <ul>
+      <li><a href="index.html"><h3>HOME</h3></a></li>
+      <li><a href="aboutme.html"><h3>ABOUT ME</h3></a></li>
+      <li><a href="contact.html"><h3>CONTACT</h3></a></li>
+
+  </ul>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+    //hamburger menu
+    $(document).ready(function(){
+        $('.menu').click(function(){
+            $('ul').toggleClass('active');
+        })
+    })
+</script>
+<script>
+    //sticky topnav
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementsById("topnav");
+    var sticky = navbar.offsetTop;
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+</script>
+
+<body style="background-image: url(./resources/img/grid.png);">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p style="padding-left: 20px;">Your message was not able to be sent. Please ensure you have completed all fields before submitting the form. </p>
+  <p style="padding-left: 20px;">If you keep getting this error, email me at camilapaleno@gmail.com. Thanks! </p>
+  <p style="padding-left: 20px;"><a href="JavaScript:history.go(-1);">Back</a></p>
+</body>
+
+
+</html>

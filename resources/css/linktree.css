@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: #F5F6F7;
+    height: 100%;
+    width: 540px;
+    margin: 0 auto;
+}  
+
+@media (max-width: 768px){
+html {
+    width: 100%;
+}  
+}
+
+body {
+    background-color: #F5F6F7;
+}
+
+#logo {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#logo img{
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#link-button {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    transition: .3s;
+    font-size: 18px;
+    text-align: center;
+    /*box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);*/
+    
+}
+
+#blurb p{
+    text-align: center;
+    color: #c38e73;
+    font-family: 'Rozha One', serif;
+    font-size: 42px;
+}
+
+.style-1 {
+    color: #F5F6F7;
+    background-color: #ead3cb;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.style-1:hover {
+    color: #f5f5f5;
+    background-color: #ebc1b3;
+    transform: scale(.985);
+}
+
+.style-2 {
+    color: #F5F6F7;
+    background-color: #f5e3bf;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.style-2:hover {
+    color: #F5F6F7;
+    background-color: #f7dba4;
+    transform: scale(.985);
+}
+
+.style-3 {
+    color: #F5F6F7;
+    background-color: #cddee0;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.style-3:hover {
+    color: #F5F6F7;
+    background-color: #aad9df;
+    transform: scale(.985);
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}

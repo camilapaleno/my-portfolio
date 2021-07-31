@@ -1,171 +1,100 @@
-#parallax {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../img/LAskyline.png), url(../img/LAsky1.png), url(../img/LAsky0.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: 50% 50%;
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
-.intro {
-    position: absolute;
-    width: 65%;
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1c1e24;
+    animation: transitionIn 6s;
+    
+}
+
+.background {
+    background-color: #1c1e24;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.container {
+    margin: 0;
+    position: relative;
     top: 50%;
     left: 50%;
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    margin-top: -5%;
 }
 
-.intro h2 {
-    font-size: 24px;
-}
-
-#camilamobile {
-    display: none;
-}
-
-@media screen and (max-width: 784px){
-    #camila {
-        display: none;
-    }
-
-    #camilamobile {
-        display: block;
-    }
-
-    .intro {
-        top: 40%;
-        margin-top: 0%;
-    }
-
-    .intro h2 {
-        font-size: 24px;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .intro {
-        width: 90%;
-        top: 45%;
-    }
-}
-
-.moving-plane{
+.enter {
     position: absolute;
-    width: 30px;
-    z-index: 2;
-    left: -30%;
-    top: -100px;
-    animation: movePlane 60s linear forwards;
-    animation-delay: -4s;
-
-  }
-
-  @keyframes movePlane{
-    0% {
-    left: -30%;
-    }
-    100% {
-    left: 130%;
-    }
-  }
-
-
-/* NAVBAR */
-nav {
-    margin-top: -71px;
-    height: 71px;
+    margin-top: -50px;
+    width: 100vw;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        display: none;
-    }
-}
-
-#navbar {
-    overflow: hidden;
-    background-color: #6C6565;
-    border-bottom: #433C3C solid 1px;
-    z-index: 1;
-  }
-  
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
+p {
+    
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 1s;
     text-align: center;
+}
+
+a {
     text-decoration: none;
-    padding: 16px;
-  }
-  
-
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  .sticky + .content {
-    padding-top: 0px;
-  }
-
-  @media screen and (max-width: 540px){
-        a {
-            font-size: 18px;
-        }
-
-        nav {
-            margin-top: -50px;
-            height: 50px;
-        }
-
-        #navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            text-decoration: none;
-            padding: 12px;
-          }
-  }
-
-
-
-
-
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0;  } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn 1s ease-in 1s 1 normal forwards;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn 1s ease-in 1s 1 normal forwards;
-    animation:fadeIn 1s ease-in 1s 1 normal forwards;
+    color: white;
 }
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0;  } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-.fade-in-slow {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn 1s ease-in 2s 1 normal forwards;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn 1s ease-in 2s 1 normal forwards;
-    animation:fadeIn 1s ease-in 2s 1 normal forwards;
+a:hover {
+    color: turquoise;
 }
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0;  } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.animation {
+    width: 30vw;
+    margin: 0 auto;
+}
 
-.fade-in-slower {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn 1s ease-in 2.5s 1 normal forwards;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn 1s ease-in 2.5s 1 normal forwards;
-    animation:fadeIn 1s ease-in 2.5s 1 normal forwards;
+
+@media (max-width: 768px){
+    .animation {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
+.delayed-entry{
+    animation-delay: 5s;
+    animation: transitionIn 1s;
+}
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+
+@keyframes delayed-entry {
+    from {
+        opacity: 0;
+
+    }
+
+    to {
+        opacity: 1;
+
+    }
 }
