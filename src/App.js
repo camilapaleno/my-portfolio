@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/pages/Home';
 
 function App() {
+
   return (
     <>
     <Router>
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home}/>
       </Switch>
+      
     </Router>
       
     </>

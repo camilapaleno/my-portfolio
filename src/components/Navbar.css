@@ -9,6 +9,7 @@
     position: fixed;
     left: 0;
     z-index: 999;
+    box-shadow: 5px 0px 10px #24242421;
   }
   
   .navbar-container {

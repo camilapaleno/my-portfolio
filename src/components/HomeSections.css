@@ -1,0 +1,40 @@
+.home-container {
+    height: 100vh;
+    margin-left: 130px;
+    position: relative;
+}
+
+.home-section {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+
+.home-text {
+    width: 40vw;
+    padding-right: 5vw;
+}
+
+.home-animation {
+    width: 25vw;
+}
+
+.home-animation img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 800;
+  }
+
+
+.skyline img{
+    bottom: 0;
+    position: absolute;
+    height: 200px;
+}
