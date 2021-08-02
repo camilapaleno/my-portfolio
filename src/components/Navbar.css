@@ -43,20 +43,19 @@
     display: block;
     list-style: none;
     text-align: left;
+    margin-top: -100%;
   }
   
   .nav-item {
-    height: 40px;
+    height: 50px;
   }
 
   .nav-item i {
     padding: .5em;
   }
 
-
   .nav-socials {
     padding: 0.1rem 1rem;
-    margin-top: 100px;
     text-align: center;
   }
 
@@ -84,13 +83,14 @@
   }
 
   .nav-links p {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
   }
   
   .nav-links:hover {
-    border-left: 4px solid #fff;
+    border-left: 4px solid #b2d3d6;
     transition: all 0.2s ease-out;
+    color: #b2d3d6;
   }
   
   .fa-bars {

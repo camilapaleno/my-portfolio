@@ -58,7 +58,6 @@ function Navbar() {
                                     <i class="fab fa-instagram"></i>
                                 </Link> 
                             </div>
-                            
                         </li>
                     </ul>
                 </div>

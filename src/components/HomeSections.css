@@ -30,11 +30,45 @@
 h2 {
     font-size: 42px;
     font-weight: 800;
+    color: #FFF;
   }
 
 
-.skyline img{
-    bottom: 0;
+.plane {
+    margin-left: -80vw;
+}
+
+.fog {
     position: absolute;
-    height: 200px;
+    width: 100vw;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.home-contact-container {
+    height: 50vh;
+}
+
+.home-contact-section {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.sun {
+    bottom: 0; 
+    position: absolute;
+    left: 50%;
+    transform: translate(50%);
+}
+
+.sun img {
+    width: 50px;
+    
 }
