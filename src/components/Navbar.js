@@ -25,7 +25,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/web' className='nav-links' onClick={closeMobileMenu}>
                                 <i class="fas fa-laptop-code"></i><p>web</p>
                             </Link>
                         </li>

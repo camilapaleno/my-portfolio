@@ -1,10 +1,10 @@
-import React from 'react';
-import '../App.css';
+ 
 import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import computer from '../images/computer.png';
-import fog from '../images/fog-2.png';
+import fog from '../images/cloud-6.png';
+import fog2 from '../images/cloud-7.png'
 
 function PhotoSection() {
 
@@ -33,6 +33,9 @@ function PhotoSection() {
                 <div className='home-animation'>
                     <img src={computer}/>
                 </div>
+            </div>
+            <div className='fog bottom' style={{ transform: `translateX(${offsetY * 0.2}px)` }}>
+                <img src={fog2} />
             </div>
         </div>
     )

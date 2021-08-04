@@ -3,6 +3,9 @@ import '../App.css';
 import './HeroSection.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import plane from '../images/plane.png';
+import Fade from 'react-reveal/Fade';
+import Bounce from 'react-reveal/Bounce';
 
 function HeroSection() {
 
@@ -17,16 +20,24 @@ function HeroSection() {
     }, []);
 
     return (
-           <div className='hero-container'>
-                <div className='hero-text'>
-                    <h1>welcome!</h1>
-                    <h1>my name is camila.</h1> 
+        <Fade big>
+            <div className='hero-container'>
+                <div className='plane' >
+                    <img src={plane} style={{ transform: `translateX(${offsetY * 0.3}px)` }}/>
                 </div>
-                <div className="cloud-1" style={{ transform: `translateY(${offsetY * -0.2}px)` }}></div>
-                <div className="cloud-2" style={{ transform: `translateY(${offsetY * -0.4}px)` }}></div>
-                <div className="cloud-3" style={{ transform: `translateY(${offsetY * -0.9}px)` }}></div>
-                <div className="cloud-4" style={{ transform: `translateY(${offsetY * -0.8}px)` }}></div>
+                
+                <div className='hero-text'>
+                <h1>welcome!</h1>               
+                <h1>my name is camila.</h1>        
+                </div>    
+                
+                <div className="cloud-1" style={{ transform: `translateX(${offsetY * -0.2}px)` }}></div>
+                <div className="cloud-2" style={{ transform: `translateX(${offsetY * 0.4}px)` }}></div>
+                <div className="cloud-3" style={{ transform: `translateX(${offsetY * 0.1}px)` }}></div>
+                <div className="cloud-4" style={{ transform: `translateX(${offsetY * -0.3}px)` }}></div>  
             </div> 
+        </Fade>
+           
 
         
     )

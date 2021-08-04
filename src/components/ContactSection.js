@@ -9,6 +9,7 @@ function ContactSection() {
 
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
+    const obj = document.querySelector('.sun');
   
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
@@ -17,17 +18,37 @@ function ContactSection() {
       }
     }, []);
 
+    function inViewport(element) {
+        const obj = element.getBoundingClientRect();
+        return (
+            obj.top >= 0 &&
+            obj.left >= 0 &&
+            obj.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            obj.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+
     return (
         <div className='home-container home-contact-container'>
             <div className='home-section home-contact-section'>
                 <div className='home-text'>
                     <h2>contact</h2>
-                    <p>I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.
-                        I also create animations and graphics for websites and social media using Adobe Photoshop, Illustrator, and After Effects.
-                    </p>
+                    <form>
+                    <label>
+                        <input className='info-field' type="text" name="name" value="Name" />
+                    </label>
+                    <label>
+                        <input className='info-field' type="text" name="email" value="Email" />
+                    </label>
+                    <label>
+                        <textarea value="Message" />
+                    </label>
+                    <input className='submit-btn' type="submit" value="Submit" />
+                    </form>
                 </div>
             </div>
-            <div className='sun' style={{ transform: `translateY(${offsetY * 0.015}px)` }}>
+            <div className='sun'>
                     <img src={sun}/>
                 </div>
         </div>
