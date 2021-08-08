@@ -30,7 +30,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/photo' className='nav-links' onClick={closeMobileMenu}>
                                 <i class="fas fa-camera-retro"></i><p>photo</p>
                             </Link>
                         </li>

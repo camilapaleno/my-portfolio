@@ -12,11 +12,14 @@
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
+    align-items: center;
+    overflow: visible;
 }
 
 .home-text {
     width: 40vw;
     padding-right: 5vw;
+    overflow: visible;
 }
 
 .home-animation {
@@ -31,6 +34,7 @@ h2 {
     font-size: 42px;
     font-weight: 800;
     color: #FFF;
+    overflow: visible;
   }
 
 .fog {
@@ -55,9 +59,9 @@ h2 {
 }
 
 .home-contact-section {
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -50%);
 }
 
 .sun {

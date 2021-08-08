@@ -1,11 +1,11 @@
 import React from 'react';
-import '../../App.css';
-import PageTitle from '../PageTitle';
+import '../../App.js';
+import Cards from '../Cards';
 
 function Web () {
     return (
         <>
-            <PageTitle />
+            <Cards />
         </>
     );
 }
