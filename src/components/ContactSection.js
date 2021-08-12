@@ -3,7 +3,7 @@ import '../App.css';
 import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import sun from '../images/sun.png';
+import sun from '../images/little_man.png';
 
 function ContactSection() {
 

@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Lottie from 'react-lottie-player'
-import computer from '../animations/computer.json'
+import computer from '../images/computer.png'
 import circle from '../animations/circle.json'
 import fog from '../images/cloud-5.png';
 
@@ -32,12 +32,7 @@ function WebSection() {
                         <h4>see my web dev projects <i class="fas fa-arrow-right"></i></h4>
                     </div>
                 <div className='home-animation'>
-                    <Lottie
-                        loop
-                        animationData={computer}
-                        play
-                        style={{ width: 300, height: 300 }}
-                    />
+                    <img src={computer} />
                 </div>                    
             </div>                
 {/*             <div className='fog bottom' style={{ transform: `translateX(${offsetY * -0.1}px)` }}>
