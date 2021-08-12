@@ -1,18 +1,18 @@
 import React from 'react';
 import '../Portfolios.css';
 import PhotoPortfolios from '../PhotoPortfolios';
-import Image1 from '../../images/kbig.png';
-import Image2 from '../../images/kb1.jpg';
-import Image3 from '../../images/kb4.jpg';
-import Image4 from '../../images/kb2.png';
-import Image5 from '../../images/kb3.jpg';
-import Image6 from '../../images/kb5.jpg';
-import Image7 from '../../images/kb6.jpg';
-import Image8 from '../../images/kb7.jpg';
-import Image9 from '../../images/kb8.jpg';
-import Image10 from '../../images/kb10.jpeg';
-import Image11 from '../../images/kb11.png';
-import Image12 from '../../images/kb12.png';
+import Image1 from '../../images/kb_ig.png';
+import Image2 from '../../images/kb_1.jpg';
+import Image3 from '../../images/kb_4.jpg';
+import Image4 from '../../images/kb_2.png';
+import Image5 from '../../images/kb_3.jpg';
+import Image6 from '../../images/kb_5.jpg';
+import Image7 from '../../images/kb_6.jpg';
+import Image8 from '../../images/kb_7.jpg';
+import Image9 from '../../images/kb_8.jpg';
+import Image10 from '../../images/kb_10.jpg';
+import Image11 from '../../images/kb_11.jpg';
+import Image12 from '../../images/kb_12.jpg';
 
 
 function Kickback() {

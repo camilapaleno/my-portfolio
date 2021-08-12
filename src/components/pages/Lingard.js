@@ -1,6 +1,6 @@
 import React from 'react';
 import '../Portfolios.css';
-import Portfolios from '../Portfolios';
+import Portfolios from '../WebPortfolios';
 import Example from '../../images/example.jpg';
 
 function Lingard() {

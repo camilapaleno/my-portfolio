@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../App.js';
-import Cards from '../Cards';
+import WebCards from '../WebCards';
 
 function Web () {
     return (
         <>
-            <Cards />
+            <WebCards />
         </>
     );
 }

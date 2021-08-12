@@ -3,18 +3,18 @@ import React from 'react';
 import './Pages.css';
 import CardItem from './CardItem';
 import Example from '../images/example.jpg';
-import Tom from '../images/tom.jpeg';
-import Mariana from '../images/mariana.jpeg';
+import Tom from '../images/tom.jpg';
+import Mariana from '../images/mariana_9.jpg';
 import Maggie from '../images/maggie.jpg';
-import Kickback from '../images/kb15.jpg';
-import NP from '../images/np1.jpg';
-import Tru from '../images/tru1.jpg';
-import Thailand from '../images/thailand9.JPG';
-import Iceland from '../images/iceland1.jpeg';
-import CR from '../images/cr2.jpg';
-import Mexico from '../images/mexico2.jpg';
-import Spain from '../images/spain1.jpg';
-import Event from '../images/event1.jpeg';
+import Kickback from '../images/kb_15.jpg';
+import NP from '../images/np_1.jpg';
+import Tru from '../images/tru_1.jpg';
+import Thailand from '../images/thailand_9.jpg';
+import Iceland from '../images/iceland_1.jpg';
+import CR from '../images/cr_2.jpg';
+import Mexico from '../images/mexico_2.jpg';
+import Spain from '../images/spain_1.jpg';
+import Event from '../images/event_1.jpg';
 
 function PhotoCards() {
   return (
@@ -31,6 +31,7 @@ function PhotoCards() {
               src={Kickback}
               text='Kickback Coldbrew'
               label='Product'
+              color='orange'
               description='Coffee + CBD.'
               path='/kickback'
             />
@@ -38,6 +39,7 @@ function PhotoCards() {
               src={Tru}
               text='Truronia'
               label='Product'
+              color='orange'
               description='100% Aronia berries.'
               path='/comingsoon'
             />
@@ -45,6 +47,7 @@ function PhotoCards() {
               src={Event}
               text='Event'
               label='Event'
+              color='red'
               description='Graduation, Prom, and more.'
               path='/comingsoon'
             />
@@ -54,6 +57,7 @@ function PhotoCards() {
               src={Maggie}
               text='L.A. Musicians'
               label='Portrait'
+              color='purple'
               description='For album covers and social media.'
               path='/lamusicians'
             />
@@ -61,6 +65,7 @@ function PhotoCards() {
               src={Mariana}
               text='Mariana'
               label='Portrait'
+              color='purple'
               description='Girl who looks like me.'
               path='/mariana'
             />
@@ -68,6 +73,7 @@ function PhotoCards() {
               src={Tom}
               text='Tom'
               label='Portrait'
+              color='purple'
               description='Musician, Artist, Creative.'
               path='/tom'
             />
@@ -77,6 +83,7 @@ function PhotoCards() {
               src={Example}
               text='France'
               label='Travel'
+              color='green'
               description='2017 - Visiting Family.'
               path='/comingsoon'
             />
@@ -84,6 +91,7 @@ function PhotoCards() {
               src={NP}
               text='United States'
               label='Travel'
+              color='green'
               description='2017-2021 - Roadtrips &amp; camping.'
               path='/comingsoon'
             />
@@ -93,6 +101,7 @@ function PhotoCards() {
                 src={CR}
                 text='Costa Rica'
                 label='Travel'
+                color='green'
                 description='2018 - Beaches &amp; waterfalls.'
                 path='/comingsoon'
               />
@@ -100,6 +109,7 @@ function PhotoCards() {
                 src={Mexico}
                 text='Mexico'
                 label='Travel'
+                color='green'
                 description='2021 - Solo trip #2.'
                 path='/comingsoon'
               />
@@ -107,6 +117,7 @@ function PhotoCards() {
                 src={Spain}
                 text='Spain'
                 label='Travel'
+                color='green'
                 description='2019 - Empanadas.'
                 path='/comingsoon'
               />
@@ -116,6 +127,7 @@ function PhotoCards() {
               src={Iceland}
               text='Iceland'
               label='Travel'
+              color='green'
               description='2017 - First trip without mom &amp; dad!'
               path='/comingsoon'
             />
@@ -123,6 +135,7 @@ function PhotoCards() {
               src={Thailand}
               text='Thailand'
               label='Travel'
+              color='green'
               description='2019 - First solo trip.'
               path='/thailand'
             />

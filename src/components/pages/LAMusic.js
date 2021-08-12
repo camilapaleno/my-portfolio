@@ -1,18 +1,17 @@
 import React from 'react';
 import '../Portfolios.css';
 import PhotoPortfolios from '../PhotoPortfolios';
-import Image1 from '../../images/la4.jpg';
-import Image2 from '../../images/la5.jpg';
-import Image3 from '../../images/la1.jpeg';
-import Image4 from '../../images/la2.jpeg';
-import Image5 from '../../images/la3.jpeg';
-import Image6 from '../../images/la6.jpg';
-import Image7 from '../../images/la7.jpg';
-import Image8 from '../../images/la8.jpeg';
-import Image9 from '../../images/la9.jpeg';
-import Image10 from '../../images/la10.jpeg';
-import Image11 from '../../images/la11.JPG';
-import Image12 from '../../images/kb12.png';
+import Image1 from '../../images/la_4.jpg';
+import Image2 from '../../images/la_5.jpg';
+import Image3 from '../../images/la_1.jpg';
+import Image4 from '../../images/la_2.jpg';
+import Image5 from '../../images/la_3.jpg';
+import Image6 from '../../images/la_6.jpg';
+import Image7 from '../../images/la_7.jpg';
+import Image8 from '../../images/la_8.jpg';
+import Image9 from '../../images/la_9.jpg';
+import Image10 from '../../images/la_10.jpg';
+import Image11 from '../../images/la_11.jpg';
 
 
 function LAMusic() {

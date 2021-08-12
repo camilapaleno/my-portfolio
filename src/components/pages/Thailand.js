@@ -1,19 +1,19 @@
 import React from 'react';
 import '../Portfolios.css';
 import PhotoPortfolios from '../PhotoPortfolios';
-import Image1 from '../../images/thailand1.jpg';
-import Image2 from '../../images/thailand2.jpg';
-import Image3 from '../../images/thailand3.jpg';
-import Image4 from '../../images/thailand4.jpg';
-import Image5 from '../../images/thailand5.jpg';
-import Image6 from '../../images/thailand6.jpg';
-import Image7 from '../../images/thailand7.jpg';
-import Image8 from '../../images/thailand8.jpg';
-import Image9 from '../../images/thailand9.JPG';
-import Image10 from '../../images/thailand10.JPG';
-import Image11 from '../../images/thailand11.JPG';
-import Image12 from '../../images/thailand12.JPG';
-import Image13 from '../../images/thailand13.JPG';
+import Image1 from '../../images/thailand_1.jpg';
+import Image2 from '../../images/thailand_2.jpg';
+import Image3 from '../../images/thailand_3.jpg';
+import Image4 from '../../images/thailand_4.jpg';
+import Image5 from '../../images/thailand_5.jpg';
+import Image6 from '../../images/thailand_6.jpg';
+import Image7 from '../../images/thailand_7.jpg';
+import Image8 from '../../images/thailand_8.jpg';
+import Image9 from '../../images/thailand_9.jpg';
+import Image10 from '../../images/thailand_10.jpg';
+import Image11 from '../../images/thailand_11.jpg';
+import Image12 from '../../images/thailand_12.jpg';
+import Image13 from '../../images/thailand_13.jpg';
 
 
 function Thailand() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import {Helmet} from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
@@ -22,6 +23,19 @@ function App() {
 
   return (
     <>
+    <Helmet>
+      <title>Camila Paleno</title>
+
+      <script src="./animations/animation.js"></script>
+      <script src="./animations/lottie.js"></script>
+
+      <meta property="og:image" content="/"/>
+      <meta name="description" content="Clean and modern website design and development for your business." />
+      <meta property="og:title" content="Web Design and Development"/>
+      <meta property="og:url" content="https://www.imcamila.com" />
+      <meta property="og:description" content="Clean and modern website design and development for your business." />
+    </Helmet>
+
     <Router>
       <Navbar />
       <Switch>

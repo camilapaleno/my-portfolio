@@ -1,12 +1,13 @@
 import React from 'react';
 import '../App.css';
 import './HomeSections.css';
+import {Helmet} from "react-helmet";
 import { useState } from 'react';
 import { useEffect } from 'react';
-import computer from '../images/computer.png';
+import Lottie from 'react-lottie-player'
+import computer from '../animations/computer.json'
+import circle from '../animations/circle.json'
 import fog from '../images/cloud-5.png';
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 
 function WebSection() {
 
@@ -21,23 +22,27 @@ function WebSection() {
     }, []);
 
     return (
-        <div className='home-container'>
+        <div className='home-container web'>
             <div className='home-section'>
-                        <div className='home-text'>
-                            <h2>web development &amp; design</h2><br />
-                            <p>I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.
-                                I also create animations and graphics for websites and social media using Adobe Photoshop, Illustrator, and After Effects.
-                            </p><br />
-                            <h4>see my web dev projects <i class="fas fa-arrow-right"></i></h4>
-                        </div>
-
+                    <div className='home-text'>
+                        <h2>web development &amp; design</h2><br />
+                        <p>I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.
+                            I also create animations and graphics for websites and social media using Adobe Photoshop, Illustrator, and After Effects.
+                        </p><br />
+                        <h4>see my web dev projects <i class="fas fa-arrow-right"></i></h4>
+                    </div>
                 <div className='home-animation'>
-                    <img src={computer}/>
+                    <Lottie
+                        loop
+                        animationData={computer}
+                        play
+                        style={{ width: 300, height: 300 }}
+                    />
                 </div>                    
             </div>                
-            <div className='fog bottom' style={{ transform: `translateX(${offsetY * -0.1}px)` }}>
+{/*             <div className='fog bottom' style={{ transform: `translateX(${offsetY * -0.1}px)` }}>
                 <img src={fog}/>
-            </div>
+            </div> */}
         </div>
     )
 }

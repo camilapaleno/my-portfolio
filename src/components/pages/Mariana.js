@@ -1,16 +1,16 @@
 import React from 'react';
 import '../Portfolios.css';
 import PhotoPortfolios from '../PhotoPortfolios';
-import Image1 from '../../images/mariana1.jpeg';
-import Image2 from '../../images/mariana2.jpeg';
-import Image3 from '../../images/mariana3.jpeg';
-import Image4 from '../../images/mariana4.jpeg';
-import Image5 from '../../images/mariana5.jpg';
-import Image6 from '../../images/mariana6.jpg';
-import Image7 from '../../images/mariana7.jpg';
-import Image8 from '../../images/mariana8.jpeg';
-import Image9 from '../../images/mariana9.jpeg';
-import Image10 from '../../images/mariana10.jpeg';
+import Image1 from '../../images/mariana_1.jpg';
+import Image2 from '../../images/mariana_2.jpg';
+import Image3 from '../../images/mariana_3.jpg';
+import Image4 from '../../images/mariana_4.jpg';
+import Image5 from '../../images/mariana_5.jpg';
+import Image6 from '../../images/mariana_6.jpg';
+import Image7 from '../../images/mariana_7.jpg';
+import Image8 from '../../images/mariana_8.jpg';
+import Image9 from '../../images/mariana_9.jpg';
+import Image10 from '../../images/mariana_10.jpg';
 
 
 function Mariana() {

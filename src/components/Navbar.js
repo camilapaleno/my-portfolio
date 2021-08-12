@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../images/logo.png';
+import Lottie from 'react-lottie-player'
+import logo from '../animations/logo.json'
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -13,7 +14,12 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        <img src={logo} alt="Logo" />
+                        <Lottie
+                        loop
+                        animationData={logo}
+                        play
+                        style={{ width: 75, height: 75 }}
+                        />
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

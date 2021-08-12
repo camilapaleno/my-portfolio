@@ -1,11 +1,10 @@
 import React from 'react';
 import '../App.css';
-import './HeroSection.css';
+import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import plane from '../images/plane.png';
 import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 
 function HeroSection() {
 
@@ -23,7 +22,7 @@ function HeroSection() {
         <Fade big>
             <div className='hero-container'>
                 <div className='plane' >
-                    <img src={plane} style={{ transform: `translateX(${offsetY * 0.3}px)` }}/>
+                    <img src={plane} alt='plane' style={{ transform: `translateX(${offsetY * 0.3}px)` }}/>
                 </div>
                 
                 <div className='hero-text'>

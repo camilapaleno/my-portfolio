@@ -85,6 +85,30 @@ h1, h2 {
     background-color: #1f98f4;
     box-sizing: border-box;
   }
+
+  #blue::after {
+    background-color: #a3d2e0;
+  }
+
+  #navy::after {
+    background-color: #11568a;
+  }
+
+  #orange::after {
+    background-color: #d18e61;
+  }
+
+  #green::after {
+    background-color: #466b58;
+  }
+
+  #red::after {
+    background-color: #eccbcd;
+  }
+
+  #purple::after {
+    background-color: #eed59f;
+  }
   
   .cards__item__img {
     position: absolute;

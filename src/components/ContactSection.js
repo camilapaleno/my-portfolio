@@ -9,7 +9,6 @@ function ContactSection() {
 
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
-    const obj = document.querySelector('.sun');
   
     useEffect(() => {
       window.addEventListener("scroll", handleScroll);
@@ -18,19 +17,8 @@ function ContactSection() {
       }
     }, []);
 
-    function inViewport(element) {
-        const obj = element.getBoundingClientRect();
-        return (
-            obj.top >= 0 &&
-            obj.left >= 0 &&
-            obj.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            obj.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-
     return (
-        <div className='home-container home-contact-container'>
+        <div className='home-container contact home-contact-container'>
             <div className='home-section home-contact-section'>
                 <div className='home-text'>
                     <h2>contact</h2>
@@ -49,7 +37,7 @@ function ContactSection() {
                 </div>
             </div>
             <div className='sun'>
-                    <img src={sun}/>
+                    <img src={sun} alt='sun'/>
                 </div>
         </div>
     )
