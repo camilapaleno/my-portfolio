@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Lottie from 'react-lottie-player'
 import logo from '../animations/logo.json'
+import Fade from 'react-reveal/Fade';
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -11,6 +12,7 @@ function Navbar() {
 
     return (
         <>
+        <Fade left>
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
@@ -41,7 +43,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
                             <i class="fas fa-poo"></i><p>about</p>
                             </Link>
                         </li>
@@ -68,6 +70,8 @@ function Navbar() {
                     </ul>
                 </div>
             </nav>
+        </Fade>
+
         </>
     )
 }

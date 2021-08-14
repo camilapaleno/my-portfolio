@@ -4,6 +4,7 @@ import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import sun from '../images/little_man.png';
+import Fade from 'react-reveal/Fade';
 
 function ContactSection() {
 
@@ -20,6 +21,7 @@ function ContactSection() {
     return (
         <div className='home-container contact home-contact-container'>
             <div className='home-section home-contact-section'>
+                <Fade up>
                 <div className='home-text'>
                     <h2>contact</h2>
                     <form>
@@ -35,6 +37,8 @@ function ContactSection() {
                     <input className='submit-btn' type="submit" value="Submit" />
                     </form>
                 </div>
+                </Fade>
+
             </div>
             <div className='sun'>
                     <img src={sun} alt='sun'/>

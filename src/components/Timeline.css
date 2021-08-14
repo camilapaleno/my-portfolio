@@ -1,0 +1,111 @@
+.timeline__containter {
+    padding-top: 20px;
+    background: rgb(249,226,202);
+    background: linear-gradient(180deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
+    margin-left: 130px;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+.timeline__line {
+    width: 2px;
+    height: 200vh;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.timeline__box {
+    width: 100%;
+    display: block;
+}
+
+.timeline__left, .timeline__right {
+    width: 50%;
+    overflow-x: visible;
+}
+
+.timeline__left {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.timeline__right {
+    display: flex;
+    margin-left: auto;
+}
+
+.left__point {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -15px;
+    z-index: 99;
+}
+
+.timeline__left h3 {
+    text-align: right;
+}
+
+.timeline__right h3 {
+    text-align: left;
+}
+
+.right__point {
+    display: flex;
+    align-items: center;
+    margin-left: -15px;
+    z-index: 99;
+}
+
+.line {
+    width: 10px;
+    height: 2px;
+    background-color: white;
+}
+
+.circle i {
+    font-size: 10px;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}   
+
+.timeline__text {
+    font-size: 1vw;
+    padding: 20px;
+    width: 300px;
+    
+}
+
+.timeline__text p {
+    text-align: justify;
+}

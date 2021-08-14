@@ -3,7 +3,7 @@
     margin-left: 130px;
     position: relative;
     background: rgb(249,226,202);
-background: linear-gradient(98deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
+    background: linear-gradient(180deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
 }
 
 .hero-text {
@@ -14,11 +14,11 @@ background: linear-gradient(98deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 1
     transform: translate(-50%, -50%);
 }
 
-.hero-text h1, .hero-text span{
+.hero-text h1{
     font-family: Rozha One, sans-serif;
-    letter-spacing: 1px;
     color: white;
-    font-size: 48px;
+    font-size: 4vw;
+    text-align: left;
 }
 
 .hero-container img {
@@ -121,7 +121,7 @@ background: linear-gradient(98deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 1
 
 .home-text h2 {
     font-family: Rozha One, Verdana, sans-serif;
-    font-size: 2em;
+    font-size: 2.5vw;
     overflow: visible;
     background: rgb(249,226,202);
     background: linear-gradient(98deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
@@ -131,6 +131,15 @@ background: linear-gradient(98deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 1
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
   }
+
+.home-text h4 {
+    font-size: 1.25vw;
+}
+
+.home-text p {
+    font-size: 1.25vw;
+    text-align: left;
+}
 
 .home-animation {
     width: 25vw;

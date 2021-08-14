@@ -2,10 +2,8 @@
 import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import computer from '../images/computer.png';
+import Fade from 'react-reveal/Fade';
 import camera from '../images/camera.png';
-import fog from '../images/cloud-6.png';
-import fog2 from '../images/cloud-7.png'
 
 function PhotoSection() {
 
@@ -21,10 +19,8 @@ function PhotoSection() {
 
     return (
         <div className='home-container photo'>
-{/*             <div className='fog top' style={{ transform: `translateX(${offsetY * 0.1}px)` }}>
-                <img src={fog} alt='cloud'/>
-            </div> */}
             <div className='home-section'>
+            <Fade left>
                 <div className='home-text'>
                     <h2>product &amp; portrait photography</h2><br />
                     <p>I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.
@@ -32,13 +28,13 @@ function PhotoSection() {
                     </p><br />
                     <h4>see my photo projects <i class="fas fa-arrow-right"></i></h4>
                 </div>
+            </Fade>
+            <Fade>
                 <div className='home-animation'>
                     <img src={camera} alt='camera'/>
                 </div>
+            </Fade>
             </div>
-{/*             <div className='fog bottom' style={{ transform: `translateX(${offsetY * 0.2}px)` }}>
-                <img src={fog2} alt='cloud'/>
-            </div> */}
         </div>
     )
 }

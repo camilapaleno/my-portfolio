@@ -18,6 +18,7 @@ import Mariana from './components/pages/Mariana';
 import Tom from './components/pages/Tom';
 import Thailand from './components/pages/Thailand';
 import ComingSoon from './components/pages/WIP';
+import About from './components/pages/About';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
         <Route path="/tom" exact component={Tom}/>
         <Route path="/thailand" exact component={Thailand}/>
         <Route path="/comingsoon" exact component={ComingSoon}/>
+        <Route path="/about" exact component={About}/>
       </Switch>
     </Router>
     </>

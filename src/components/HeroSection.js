@@ -19,8 +19,9 @@ function HeroSection() {
     }, []);
 
     return (
-        <Fade big>
+        <Fade>
             <div className='hero-container'>
+                
                 <div className='plane' >
                     <img src={plane} alt='plane' style={{ transform: `translateX(${offsetY * 0.3}px)` }}/>
                 </div>
