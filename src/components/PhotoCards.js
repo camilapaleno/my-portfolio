@@ -3,22 +3,24 @@ import React from 'react';
 import './Pages.css';
 import CardItem from './CardItem';
 import Example from '../images/example.jpg';
-import Tom from '../images/tom.jpg';
+import Tom from '../images/tom_preview.jpg';
 import Mariana from '../images/mariana_9.jpg';
-import Maggie from '../images/maggie.jpg';
-import Kickback from '../images/kb_15.jpg';
-import NP from '../images/np_1.jpg';
-import Tru from '../images/tru_1.jpg';
-import Thailand from '../images/thailand_9.jpg';
-import Iceland from '../images/iceland_1.jpg';
-import CR from '../images/cr_2.jpg';
-import Mexico from '../images/mexico_2.jpg';
-import Spain from '../images/spain_1.jpg';
-import Event from '../images/event_1.jpg';
+import Maggie from '../images/maggie_preview.jpg';
+import Kickback from '../images/kb_preview.jpg';
+import NP from '../images/np_preview.jpg';
+import Tru from '../images/tru_preview.jpg';
+import Thailand from '../images/thailand_preview.jpg';
+import Iceland from '../images/iceland_preview.jpg';
+import CR from '../images/cr_preview.jpg';
+import Mexico from '../images/mexico_preview.jpg';
+import Spain from '../images/spain_preview.jpg';
+import Event from '../images/event_preview.jpg';
+import Fade from 'react-reveal/Fade';
 
 function PhotoCards() {
   return (
-    <div className='cards'>
+    <Fade>
+    <div className='cards'>  
       <div className='cards__container'>
         <div className='title__wrapper'>
             <h1>Portrait &amp; Product Photo Portfolio</h1>
@@ -143,6 +145,7 @@ function PhotoCards() {
         </div>
       </div>
     </div>
+    </Fade>
   );
 }
 

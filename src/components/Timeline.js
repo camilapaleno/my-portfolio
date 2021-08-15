@@ -16,7 +16,7 @@ function Timeline() {
           top={{marginTop:100}}
           icon='fas fa-camera'
           title='2012 &bull; first dslr'
-          description='my grandpa gave me his Nikon D90 and a bunch of old lenses. This jumpstarted my interest in photography!'
+          description='My grandpa gave me his Nikon D90 and a bunch of old lenses. This jumpstarted my interest in photography!'
         />  
         <TimelineBox 
           top={{marginTop:0}}
@@ -32,16 +32,16 @@ function Timeline() {
         />  
         <TimelineBox 
           top={{marginTop:0}}
-          icon='fas fa-camera'
-          title='2017 &bull; college'
-          description='I attended U.C.L.A. and studied Psychology.'
-        />    
-        <TimelineBox 
-          top={{marginTop:0}}
           icon='fas fa-plane'
           title='2017 &bull; first trip'
           description='A couple friends and I went to Iceland and Holland. We were eating ramen noodles most nights and staying in pretty dingy airbnbs, but we pulled it off!'
-        />   
+        /> 
+        <TimelineBox 
+          top={{marginTop:0}}
+          icon='fas fa-university'
+          title='2017 &bull; college'
+          description='I attended U.C.L.A. and studied Psychology. I worked at the campus photo studio part-time and took portrait/event photos on my own time as well.'
+        />      
         <TimelineBox 
           top={{marginTop:0}}
           icon='fas fa-globe-asia'

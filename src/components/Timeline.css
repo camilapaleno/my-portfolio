@@ -7,20 +7,21 @@
     position: relative;
 }
 
-h1 {
+
+.timeline__containter h1 {
     color: white;
     padding: 10px;
     text-align: center;
 }
 
-h3 {
+.timeline__containter h3 {
     color: white;
     padding: 5px;
     text-align: center;
     padding-top: 20px;
 }
 
-p {
+.timeline__containter p {
     text-align: center;
 }
 
@@ -29,8 +30,8 @@ p {
     height: 200vh;
     position: absolute;
     background-color: rgb(255, 255, 255);
-  left: 50%;
-  transform: translate(-50%, -0%);
+    left: 50%;
+    transform: translate(-50%, -0%);
 }
 
 .timeline {

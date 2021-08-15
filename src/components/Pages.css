@@ -1,5 +1,11 @@
-h1, h2 {
-    color: #363636;
+.cards h1, h2 {
+  background: rgb(249,226,202);
+  background: linear-gradient(98deg, rgb(248, 212, 174) 0%, rgb(255, 191, 216) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .back__arrow i{
@@ -17,6 +23,12 @@ h1, h2 {
     margin-left: 130px;
     padding: 2rem;
     background: #F5F6F7;
+  }
+
+  @media screen and (max-width: 960px) {
+    .cards {
+      margin-left: 0;
+    }
   }
   
   

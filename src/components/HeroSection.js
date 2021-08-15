@@ -27,8 +27,8 @@ function HeroSection() {
                 </div>
                 
                 <div className='hero-text'>
-                <h1>welcome!</h1>               
-                <h1>my name is camila.</h1>        
+                <h1>Hello!</h1>               
+                <h1>I am Camila.</h1>        
                 </div>    
                 
                 <div className="cloud-1" style={{ transform: `translateX(${offsetY * -0.2}px)` }}></div>

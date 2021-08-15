@@ -10,6 +10,7 @@
     left: 0;
     z-index: 999;
     box-shadow: 5px 0px 5px #2424240e;
+    overflow: visible;
   }
   
   .navbar-container {
@@ -52,6 +53,7 @@
 
   .nav-item i {
     padding: .5em;
+    font-size: 12px;
   }
 
   .nav-socials {
@@ -83,8 +85,10 @@
   }
 
   .nav-links p {
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+
   }
   
   .nav-links:hover {
@@ -94,7 +98,7 @@
   }
   
   .fa-bars {
-    color: #fff;
+    color: #b2d3d6;
   }
   
   .nav-links-mobile {
@@ -113,6 +117,7 @@
     .navbar {
         width: 100vw;
         height: 80px;
+        min-width: 414px;
     }
 
     .navbar-logo {
@@ -123,20 +128,21 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 290px;
       position: absolute;
       top: 80px;
-      left: -100%;
+
       opacity: 1;
       transition: all 0.5s ease;
     }
   
     .nav-menu.active {
-      background: #242222;
-      left: 0;
+      background: #F5F6F7;
+      
       opacity: 1;
       transition: all 0.5s ease;
-      z-index: 1;
+      z-index: 99;
+      margin-top: 0;
     }
   
     .nav-links {
@@ -144,12 +150,18 @@
       padding: 2rem;
       width: 100%;
       display: table;
+
+    }
+
+    .nav-links a {
+      overflow: hidden;
     }
   
     .nav-links:hover {
       background-color: #fff;
       color: #242424;
       border-radius: 0;
+
     }
   
     .navbar-logo {
@@ -170,7 +182,7 @@
     }
   
     .fa-times {
-      color: #fff;
+      color: #b2d3d6;
       font-size: 2rem;
     }
   
@@ -193,6 +205,10 @@
       background: #fff;
       color: #242424;
       transition: 250ms;
+    }
+
+    .nav-links i {
+      display: none;
     }
 
     .nav-social-links {

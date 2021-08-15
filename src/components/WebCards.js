@@ -8,9 +8,11 @@ import BXB from '../images/bxb_preview.png';
 import NN from '../images/nn_preview.png';
 import Lingard from '../images/lingard_preview.png';
 import Carolyn from '../images/carolyn_preview.png';
+import Fade from 'react-reveal/Fade';
 
 function WebCards() {
   return (
+    <Fade>
     <div className='cards'>
       <div className='cards__container'>
         <div className='title__wrapper'>
@@ -75,6 +77,7 @@ function WebCards() {
         </div>
       </div>
     </div>
+    </Fade>
   );
 }
 
