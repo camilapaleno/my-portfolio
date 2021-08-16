@@ -4,7 +4,7 @@ import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Lottie from 'react-lottie-player'
-import computer from '../images/computer.png'
+import computer from '../animations/computer.json'
 import Fade from 'react-reveal/Fade';
 
 function WebSection() {
@@ -33,7 +33,12 @@ function WebSection() {
                 </Fade>
                 <Fade>
                     <div className='home-animation'>
-                        <img src={computer} />
+                    <Lottie
+                        loop
+                        animationData={computer}
+                        play
+   
+                        />
                     </div>  
                 </Fade>
                   

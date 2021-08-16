@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Lottie from 'react-lottie-player'
-import logo from '../images/CP.png'
+import logo from '../animations/mila.json'
 import Fade from 'react-reveal/Fade';
 
 function Navbar() {
@@ -16,13 +16,13 @@ function Navbar() {
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-{/*                         <Lottie
-                        loop
+                        <Lottie
+                        loop={false}
                         animationData={logo}
                         play
                         style={{ width: 75, height: 75 }}
-                        /> */}
-                        <img src={logo} />
+                        />
+                        {/* <img src={logo} /> */}
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

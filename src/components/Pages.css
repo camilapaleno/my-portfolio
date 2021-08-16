@@ -1,22 +1,6 @@
 .cards h1, h2 {
-  background: rgb(249,226,202);
-  background: linear-gradient(98deg, rgb(248, 212, 174) 0%, rgb(255, 191, 216) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
-.back__arrow i{
-  margin: 40px;
-  font-size: 30px;
-  color: #dadada;
-  position: fixed;
-}
-
-.back__arrow i:hover {
-  color: #1f98f4;
+  color: #4d4d4d;
+  font-size: 3vw;
 }
 
 .cards {
@@ -29,8 +13,35 @@
     .cards {
       margin-left: 0;
     }
+
+    .cards h1, h2 {
+      font-size: 2em;
+    }
   }
   
+  .cards .socials__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 2vw;
+    font-size: 50px;
+    
+  }
+
+  @media screen and (max-width: 960px) {
+    .cards .socials__container {
+      display: none;
+    }
+  }
+
+  .cards .socials__container i {
+    color: #4d4d4d;
+    transition: .2s;
+  }
+
+  .cards .socials__container i:hover {
+    color: #3b3b3b;
+  }  
   
   .cards__container {
     display: flex;
@@ -41,7 +52,16 @@
   }
 
   .title__wrapper {
-      margin-top: 2rem;
+      margin-top: 5vh;
+      padding: 15px;
+  }
+
+
+  @media screen and (max-width: 960px) {
+    .title__wrapper {
+      margin-top: 130px;
+      padding: 15px;
+    }
   }
   
   .cards__wrapper {
@@ -174,9 +194,23 @@
     }
   }
 
+
+/* Portfolio Style*/
+
 .portfolio {
   margin-left: 130px;
   background: #ffffff;
+}
+
+.back__arrow i{
+  margin: 40px;
+  font-size: 30px;
+  color: #dadada;
+  position: fixed;
+}
+
+.back__arrow i:hover {
+  color: #1f98f4;
 }
   .portfolio img {
     border: 10px solid #f7f9fc;

@@ -19,18 +19,6 @@ function PhotoPortfolios(props) {
                 <img src={props.image2} alt='portfolio'/>
             </div><br />
             <p>{props.description3}</p><br /><br />
-            <ul className='portfolio__collage'>
-                <li><img src={props.image3} alt='portfolio'/></li>
-                <li><img src={props.image4} alt='portfolio'/></li>
-                <li><img src={props.image5} alt='portfolio'/></li>
-                <li><img src={props.image6} alt='portfolio'/></li>
-                <li><img src={props.image7} alt='portfolio'/></li>
-                <li><img src={props.image8} alt='portfolio'/></li>
-                <li><img src={props.image9} alt='portfolio'/></li>
-                <li><img src={props.image10} alt='portfolio'/></li>
-                <li><img src={props.image11} alt='portfolio'/></li>
-                <li><img src={props.image12} alt='portfolio'/></li>
-            </ul>
         </div>
     </div>
   );

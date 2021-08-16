@@ -1,0 +1,30 @@
+.photocollage {
+    margin-left: 130px;
+}
+
+.photocollage__container {
+    padding: 2vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+}
+
+.landscape {
+    width: 80%;
+    padding: 5px;
+}
+
+.portrait {
+    width: 40%;
+    padding: 5px;
+}
+
+.left {
+    align-self: left;
+}
+
+.right {
+    align-self: right;
+}

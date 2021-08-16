@@ -2,6 +2,7 @@
 import React from 'react';
 import './Pages.css';
 import CardItem from './CardItem';
+import { Link } from 'react-router-dom';
 import Example from '../images/example.jpg';
 import Tom from '../images/tom_preview.jpg';
 import Mariana from '../images/mariana_9.jpg';
@@ -20,10 +21,13 @@ import Fade from 'react-reveal/Fade';
 function PhotoCards() {
   return (
     <Fade>
-    <div className='cards'>  
+    <div className='cards'>
+      <Link to="https://instagram.com/pc.mila" className='socials__container'>
+        <i class="fab fa-instagram"></i>
+      </Link>  
       <div className='cards__container'>
         <div className='title__wrapper'>
-            <h1>Portrait &amp; Product Photo Portfolio</h1>
+            <h1>Portrait &amp; Product Photo Portfolio</h1><br/>
             <p>I've been taking photos with my grandpas DSLR since I was 14. While I attended U.C.L.A., I worked at the campus photo studio as a portrait photographer. I've taken many take portraits and product photos, here are some of my favorites. Also, check out a few of my photos from my recent travels below. :)
             </p>           
         </div>

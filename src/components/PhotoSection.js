@@ -3,7 +3,8 @@ import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import camera from '../images/camera.png';
+import Lottie from 'react-lottie-player'
+import camera from '../animations/camera.json'
 
 function PhotoSection() {
 
@@ -31,7 +32,12 @@ function PhotoSection() {
             </Fade>
             <Fade>
                 <div className='home-animation'>
-                    <img src={camera} alt='camera'/>
+                <Lottie
+                        loop
+                        animationData={camera}
+                        play
+   
+                        />
                 </div>
             </Fade>
             </div>

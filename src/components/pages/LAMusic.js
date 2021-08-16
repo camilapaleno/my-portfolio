@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Portfolios.css';
 import PhotoPortfolios from '../PhotoPortfolios';
+import PhotoCollage from '../PhotoCollage';
 import Image1 from '../../images/la_4.jpg';
 import Image2 from '../../images/la_5.jpg';
 import Image3 from '../../images/la_1.jpg';
@@ -16,6 +17,7 @@ import Image11 from '../../images/la_11.jpg';
 
 function LAMusic() {
   return (
+    <>
     <PhotoPortfolios
         title='L.A. Musicians'
         description='Living in Los Angeles, Ive encountered many people moving to the area who have aspirations to make it big in the music industry. Taking photos for album covers and social media is a little more fun (and a little more challenging) because theres a specific look and feel we have to capture in the photos.'
@@ -24,13 +26,19 @@ function LAMusic() {
         description1='Maggie Andrews (@maggieandrew) was looking for a glamourous but dark and moody feel for her album "Sleep 4ever".'
         image2={Image2}
         description2='We managed to find a really pretty bathtub and drag it into our studio. Pretty cool.'
-        image3={Image8}
-        image4={Image10}
-        image5={Image3}
-        image6={Image6}
-        image7={Image7}
-        image8={Image4}
-    />
+    />    
+    <div className='photocollage'>
+        <div className='photocollage__container'>
+           <img className='landscape' src={Image8} /> 
+           <img className='landscape left'src={Image4} />
+           <img className='portrait right' src={Image10} />
+           <img className='landscape' src={Image3} />
+          <img className='landscape' src={Image5} />
+          <img className='portrait' src={Image6} />                 
+        </div>
+    </div>
+    </>
+
   );
 }
 
