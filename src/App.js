@@ -6,19 +6,23 @@ import './App.css';
 import Home from './components/pages/Home';
 import Web from './components/pages/Web';
 import Photo from './components/pages/Photo';
-import BPS from './components/pages/BPS';
-import BXB from './components/pages/BXB';
-import NipponNiche from './components/pages/NipponNiche';
-import Lingard from './components/pages/Lingard';
-import Carolyn from './components/pages/Carolyn';
-import DrBetty from './components/pages/DrBetty';
-import Kickback from './components/pages/Kickback';
-import LAMusic from './components/pages/LAMusic';
-import Mariana from './components/pages/Mariana';
-import Tom from './components/pages/Tom';
-import Thailand from './components/pages/Thailand';
+import BPS from './components/pages/web/BPS';
+import BXB from './components/pages/web/BXB';
+import NipponNiche from './components/pages/web/NipponNiche';
+import Lingard from './components/pages/web/Lingard';
+import Carolyn from './components/pages/web/Carolyn';
+import DrBetty from './components/pages/web/DrBetty';
+import Kickback from './components/pages/photo/Kickback';
+import LAMusic from './components/pages/photo/LAMusic';
+import Mariana from './components/pages/photo/Mariana';
+import Tom from './components/pages/photo/Tom';
+import Thailand from './components/pages/photo/Thailand';
 import ComingSoon from './components/pages/WIP';
 import About from './components/pages/About';
+import Event from './components/pages/photo/Event';
+import France from './components/pages/photo/France';
+import US from './components/pages/photo/US';
+import CR from './components/pages/photo/CR';
 
 function App() {
 
@@ -56,6 +60,10 @@ function App() {
         <Route path="/thailand" exact component={Thailand}/>
         <Route path="/comingsoon" exact component={ComingSoon}/>
         <Route path="/about" exact component={About}/>
+        <Route path="/events" exact component={Event}/>
+        <Route path="/france" exact component={France}/>
+        <Route path="/unitedstates" exact component={US}/>
+        <Route path="/costarica" exact component={CR}/>
       </Switch>
     </Router>
     </>
