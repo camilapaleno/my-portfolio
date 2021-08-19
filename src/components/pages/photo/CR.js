@@ -2,6 +2,7 @@ import React from 'react';
 import '../../PhotoCollage.css';
 import { Link } from 'react-router-dom';
 
+
 import Image1 from '../../../images/Costa_Rica/cr_1.jpg';
 import Image2 from '../../../images/Costa_Rica/cr_2.jpg';
 import Image3 from '../../../images/Costa_Rica/cr_3.jpg';

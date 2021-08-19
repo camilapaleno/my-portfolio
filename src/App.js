@@ -23,6 +23,9 @@ import Event from './components/pages/photo/Event';
 import France from './components/pages/photo/France';
 import US from './components/pages/photo/US';
 import CR from './components/pages/photo/CR';
+import Mexico from './components/pages/photo/Mexico';
+import Spain from './components/pages/photo/Spain';
+import Iceland from './components/pages/photo/Iceland';
 
 function App() {
 
@@ -64,6 +67,9 @@ function App() {
         <Route path="/france" exact component={France}/>
         <Route path="/unitedstates" exact component={US}/>
         <Route path="/costarica" exact component={CR}/>
+        <Route path="/mexico" exact component={Mexico}/>
+        <Route path="/spain" exact component={Spain}/>
+        <Route path="/iceland" exact component={Iceland}/>
       </Switch>
     </Router>
     </>

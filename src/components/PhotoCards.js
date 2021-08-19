@@ -108,7 +108,7 @@ function PhotoCards() {
                 label='Travel'
                 color='green'
                 description='2021 - Solo trip #2. **page coming soon**'
-                path='/comingsoon'
+                path='/mexico'
               />
               <CardItem
                 src={Spain}
@@ -116,7 +116,7 @@ function PhotoCards() {
                 label='Travel'
                 color='green'
                 description='2019 - Empanadas. **page coming soon**'
-                path='/comingsoon'
+                path='/spain'
               />
             </ul>
           <ul className='cards__items'>
@@ -126,7 +126,7 @@ function PhotoCards() {
               label='Travel'
               color='green'
               description='2017 - First trip without mom &amp; dad!  **page coming soon**'
-              path='/comingsoon'
+              path='/iceland'
             />
             <CardItem
               src={Thailand}

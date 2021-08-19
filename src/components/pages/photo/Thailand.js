@@ -1,6 +1,7 @@
 import React from 'react';
-import '../../Portfolios.css';
-import PhotoPortfolios from '../../PhotoPortfolios';
+import '../../PhotoCollage.css';
+import { Link } from 'react-router-dom';
+
 import Image1 from '../../../images/Thailand/thailand_1.jpg';
 import Image2 from '../../../images/Thailand/thailand_2.jpg';
 import Image3 from '../../../images/Thailand/thailand_3.jpg';
@@ -18,24 +19,61 @@ import Image13 from '../../../images/Thailand/thailand_13.jpg';
 
 function Thailand() {
   return (
-    <PhotoPortfolios
-        title='Thailand 2019'
-        description='This was my first ever solo trip. I made many friends and even rode a motorbike for the first time (bike pictured below).'
-        quote=''
-        image1={Image10}
-        description1='These temples were on Koh Samui. I spend a week on this island and spent my time riding around in "taxis" (the back of trucks) to different temple sites and view points.'
-        image2={Image6}
-        description2='I met my friend Gabe on Koh Samui and we took a ferry to Koh Tao, my favorite island. This is us walking to a popular scuba diving site.'
-        image3={Image2}
-        image4={Image4}
-        image5={Image5}
-        image6={Image1}
-        image7={Image7}
-        image8={Image8}
-        image9={Image13}
-        image10={Image11}
-        image11={Image3}
-    />
+    <>
+    <Link className='back__arrow' to='./Photo'><i class="fas fa-arrow-circle-left"></i></Link>
+    <div className='photocollage'>
+      <div className='photocollage__title'>
+        <h1>Thailand</h1>
+        <p>This was my first solo trip. I flew into Bangkok and then visited three islands: Koh Samui, Koh Phangan, and Koh Tao</p>
+      </div>
+      <div className='photocollage__container'>
+        <div className='photocollage__item landscape'>
+          <img src={Image4} />
+          <p>Wat Plai Laem Temple, Koh Samui - 2019</p>
+        </div>  
+        <div className='photocollage__item portrait'>
+          <img src={Image6} />
+          <p>On our way to Shark Bay, Koh Tao - 2019</p>
+        </div> 
+        <div className='photocollage__item landscape'>
+          <img src={Image2} />
+          <p>Beach in front of my hostel, Koh Samui - 2019</p>
+        </div>
+        <div className='photocollage__item landscape'>
+          <img src={Image7} />
+          <p>Shark Bay, Koh Tao - 2019</p>
+        </div>  
+        <div className='photocollage__item landscape'>
+          <img src={Image1} />
+          <p>Beach in front of my hostel, Koh Samui - 2019</p>
+        </div>  
+        <div className='photocollage__item landscape'>
+          <img src={Image5} />
+          <p>Our bikes, Koh Tao - 2019</p>
+        </div> 
+        <div className='photocollage__item landscape'>
+          <img src={Image9} />
+          <p>Beach in front of my hostel, Koh Samui - 2019</p>
+        </div>  
+        <div className='photocollage__item landscape'>
+          <img src={Image3} />
+          <p>Angthong National Park - 2019</p>
+        </div>     
+        <div className='photocollage__item landscape'>
+          <img src={Image13} />
+          <p>Angthong National Park - 2019</p>
+        </div>            
+        <div className='photocollage__item landscape'>
+          <img src={Image8} />
+          <p>John Suwan Viewpoint, Koh Tao - 2019</p>
+        </div>  
+        <div className='photocollage__item landscape'>
+          <img src={Image11} />
+          <p>Wat Plai Laem Temple, Koh Samui - 2019</p>
+        </div>  
+      </div>
+    </div>
+    </>
   );
 }
 
