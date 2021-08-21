@@ -3,6 +3,7 @@ import '../App.css';
 import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie-player'
 import computer from '../animations/computer.json'
 import Fade from 'react-reveal/Fade';
@@ -28,7 +29,7 @@ function WebSection() {
                         <p>I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.
                             I also create animations and graphics for websites and social media using Adobe Photoshop, Illustrator, and After Effects.
                         </p><br />
-                        <h4>see my web dev projects <i class="fas fa-arrow-right"></i></h4>
+                        <Link to='/web'><h4>see my web dev projects <i class="fas fa-arrow-right"></i></h4></Link>
                     </div>
                 </Fade>
                 <Fade>

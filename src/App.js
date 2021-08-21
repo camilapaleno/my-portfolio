@@ -26,6 +26,8 @@ import CR from './components/pages/photo/CR';
 import Mexico from './components/pages/photo/Mexico';
 import Spain from './components/pages/photo/Spain';
 import Iceland from './components/pages/photo/Iceland';
+import Contact from './components/pages/Contact';
+import Links from './components/pages/Links';
 
 function App() {
 
@@ -36,6 +38,10 @@ function App() {
 
       <script src="./animations/animation.js"></script>
       <script src="./animations/lottie.js"></script>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <link rel="manifest" href="/site.webmanifest"/>
 
       <meta property="og:image" content="/"/>
       <meta name="description" content="Clean and modern website design and development for your business." />
@@ -70,6 +76,8 @@ function App() {
         <Route path="/mexico" exact component={Mexico}/>
         <Route path="/spain" exact component={Spain}/>
         <Route path="/iceland" exact component={Iceland}/>
+        <Route path="/contact" exact component={Contact}/>
+        <Route path="/links" exact component={Links}/>
       </Switch>
     </Router>
     </>

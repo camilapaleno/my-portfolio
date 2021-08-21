@@ -26,7 +26,7 @@ function Home () {
                     <script src="../../animations/lottie.js"></script>
                     <link rel="stylesheet" href="https://use.typekit.net/tmt3ouk.css"></link>
 
-                    <meta property="og:image" content="/"/>
+                    <meta property="og:image" content="../../preview.jpeg"/>
                     <meta name="description" content="Clean and modern website design and development for your business." />
                     <meta property="og:title" content="Web Design and Development"/>
                     <meta property="og:url" content="https://www.imcamila.com" />

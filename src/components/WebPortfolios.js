@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Lottie from 'react-lottie-player';
+import computer from '../animations/computer.json';
 
 function WebPortfolios(props) {
   return (

@@ -19,6 +19,8 @@
     justify-content: space-between;
     align-items: left;
     height: 100vh;
+    
+
   }
   
   .navbar-logo {
@@ -43,11 +45,13 @@
     display: block;
     list-style: none;
     text-align: left;
+    overflow: visible;
     margin-top: -100%;
   }
   
   .nav-item {
     height: 50px;
+    overflow: hidden;
   }
 
   .nav-item i {
@@ -58,6 +62,9 @@
   .nav-socials {
     padding: 0.1rem 1rem;
     text-align: center;
+  }
+  .nav-socials i{
+    font-size: 14px;
   }
 
   .nav-social-links {
@@ -72,6 +79,7 @@
   ul {
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
   
   .nav-links {
@@ -81,21 +89,23 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    overflow: hidden;
   }
 
   .nav-links p {
-    font-size: 14px;
+    font-size: 12px;
+    overflow: hidden;
 
   }
   
   .nav-links:hover {
-    border-left: 4px solid #b2d3d6;
+    border-left: 4px solid #f8d490;
     transition: all 0.2s ease-out;
-    color: #b2d3d6;
+    color: #f8d490;
   }
   
   .fa-bars {
-    color: #b2d3d6;
+    color: #f8d490;
   }
   
   .nav-links-mobile {

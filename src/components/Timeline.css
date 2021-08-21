@@ -110,3 +110,20 @@
 .timeline__text p {
     text-align: justify;
 }
+
+@media screen and (max-width: 960px) { 
+    .timeline__containter {
+        padding-top: 130px;
+        margin-left: 0px;
+        height: 120vh;
+        position: relative;
+    }
+
+    .timeline__text {
+        font-size: 1em;
+    }
+
+    .timeline__line {
+        height: 300vh;
+    }
+}

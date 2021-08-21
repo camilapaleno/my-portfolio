@@ -35,6 +35,7 @@ function HeroSection() {
                 <div className="cloud-2" style={{ transform: `translateX(${offsetY * 0.4}px)` }}></div>
                 <div className="cloud-3" style={{ transform: `translateX(${offsetY * 0.1}px)` }}></div>
                 <div className="cloud-4" style={{ transform: `translateX(${offsetY * -0.3}px)` }}></div>  
+                <div id='scroll'><p>psst, scroll down</p></div>
             </div> 
         </Fade>
            

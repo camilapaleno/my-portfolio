@@ -23,8 +23,15 @@ function ContactSection() {
             <div className='home-section home-contact-section'>
                 <Fade up>
                 <div className='home-text'>
-                    <h2>contact</h2>
-                    <form>
+                    
+                    <div className='contact__container'>
+                        <div className='contact__text'>
+                            <h1>let's chat!</h1>
+                            <p>shoot me an email at hi@imcamila.com</p>
+                            <p>or give me a call at 323 456 7089</p>
+                        </div>
+                    </div>
+{/*                 <h2>contact</h2>    <form>
                     <label>
                         <input className='info-field' type="text" name="name" value="Name" />
                     </label>
@@ -35,7 +42,7 @@ function ContactSection() {
                         <textarea value="Message" />
                     </label>
                     <input className='submit-btn' type="submit" value="Submit" />
-                    </form>
+                    </form> */}
                 </div>
                 </Fade>
 

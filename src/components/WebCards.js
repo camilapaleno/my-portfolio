@@ -23,7 +23,8 @@ function WebCards() {
             <h1>Web Development &amp; Design Portfolio</h1><br/>
             <p>I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.
             I also create animations and graphics for websites and social media using Adobe Photoshop, Illustrator, and After Effects.
-            </p><br/>           
+            </p><br/>    
+            <p>The website you're currently on was made with React.js.</p>     
         </div>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
@@ -32,7 +33,7 @@ function WebCards() {
               text='Bruin Polyglot Society'
               label='HTML &amp; CSS'
               color='blue'
-              description='I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.'
+              description='Made with HTML, CSS, Javascript, and After Effects (for the animations).'
               path='/bps'
             />
             <CardItem
@@ -40,7 +41,7 @@ function WebCards() {
               text='Bxb Beanie Ball'
               label='HTML &amp; CSS'
               color='blue'
-              description='I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.'
+              description='The first website I ever made. Made with HTML and CSS.'
               path='/bxb'
             />
             <CardItem
@@ -48,8 +49,8 @@ function WebCards() {
               text='Nippon Niche'
               label='WordPress'
               color='navy'
-              description='I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.'
-              path='/nipponniche'
+              description='* Apologies, this page is in progress! Come back soon. *'
+              path='/web'
             />
           </ul>
           <ul className='cards__items'>
@@ -58,24 +59,24 @@ function WebCards() {
               text='Lingard Events'
               label='HTML &amp; CSS'
               color='blue'
-              description='I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.'
-              path='/lingard'
+              description='* Apologies, this page is in progress! Come back soon. *'
+              path='/web'
             />
             <CardItem
               src={Carolyn}
               text='Carolyn Kamii'
               label='HTML &amp; CSS'
               color='blue'
-              description='I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.'
-              path='/carolyn'
+              description='* Apologies, this page is in progress! Come back soon.* '
+              path='/web'
             />
             <CardItem
               src={Example}
               text='Dr. Betty'
               label='HTML &amp; CSS'
               color='blue'
-              description='I use HTML, CSS, and Javascript to design and develop websites that are desktop and mobile friendly.'
-              path='/drbetty'
+              description='* Apologies, this page is in progress! Come back soon.* '
+              path='/web'
             />
           </ul>
         </div>

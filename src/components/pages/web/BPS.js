@@ -1,38 +1,51 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
-import '../../Portfolios.css';
+import { Link } from 'react-router-dom';
+import '../../Pages.css';
 import Portfolios from '../../WebPortfolios';
 import Spread from '../../../images/bps_spread.png';
 import Image1 from '../../../images/bps_image1.png';
 import Image2 from '../../../images/bps_image2.png';
+import Lottie from 'react-lottie-player';
+import computer from '../../../animations/computer.json';
+import hello from '../../../animations/celebration.json';
+import collab from '../../../animations/collab.json';
 
 function BPS() {
   return (
     <>
       <Helmet>
-        <title>Camila Paleno | Web Development</title>
+        <title>Camila Paleno | Bruin Polyglot Society Web Development</title>
 
         <script src="./resources/js/animation.js"></script>
         <script src="./resources/js/lottie.js"></script>
 
         <meta property="og:image" content="/"/>
         <meta name="description" content="Clean and modern website design and development for your business." />
-        <meta property="og:title" content="Web Design and Development"/>
+        <meta property="og:title" content="Camila Paleno | Bruin Polyglot Society Web Development"/>
         <meta property="og:url" content="https://www.imcamila.com" />
         <meta property="og:description" content="Clean and modern website design and development for your business." />
       </Helmet>
 
-      <Portfolios
-        title='Bruin Polyglot Society'
-        description='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'
-        quote='“Something light, fun, and welcoming”“Animations to break up text”'
-        image1={Image1}
-        description1='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. '
-        image2={Image2}
-        description2='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. '
-        image3={Spread}
-        description3='Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.'
-      />
+      <div className='portfolio'>
+        <Link className='back' to='./Web'><i class="fas fa-arrow-circle-left"></i></Link>
+        <div className='portfolio__container'>
+            <br /><br />
+            <h1>Bruin Polyglot Society</h1><br /><br />
+            <p>A website for UCLA's premier language learning organization. BPS wanted a website to appeal to UCLA students since they were just starting out. Cameron, founder of BPS, wanted something: </p><br /><br />
+            <h3>"Welcoming and fun, but still professional."</h3><br />
+            <div className='portfolio__description'>
+                <div id="anim"><Lottie loop={false} animationData={hello} play/></div>
+                <div id="txt"><p>I made these animations in Adobe Photoshop and After Effects. It was by far the most time consuming part of this project, but the team at BPS were loving the animations and kept asking for more!</p></div>
+            </div>
+            <div className='portfolio__description'>
+                <div id="txt"><p>Cameron and the team provided me with a lot of text, so to avoid blocks of words, I made animations that were relevant to the point of the sentences to make it more visual and keep it interesting.</p></div>
+                <div id="anim"><Lottie loop animationData={collab} play/></div>
+            </div><br />
+            <p>Here is a spread of the BPS Home page. I just used HTML, CSS, and a little Javascript since it was a pretty simple website. I used bodymovin and Lottie to export the animations as .json files. </p><br /><br /><br />
+            <img className='portfolio__show' src={Spread} alt='portfolio'/>
+        </div>
+    </div>
     </>
 
   );

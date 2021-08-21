@@ -21,6 +21,22 @@
     text-align: left;
 }
 
+#scroll {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: none;
+}
+
+#scroll p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 1em;
+    color: #4d4d4d;
+    font-size: .5em;
+}
+
 @media screen and (max-width: 960px) {
     .hero-text h1{
         font-size: 3em;
@@ -118,8 +134,28 @@
     background-color: #f5f6f7;
 }
 
+.web a {
+    color: #4d4d4d;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.web a:hover {
+    color: #f8d490;
+}
+
 .photo {
     background-color: #FFF;
+}
+
+.photo a {
+    color: #4d4d4d;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.photo a:hover {
+    color: #f8d490;
 }
 
 .contact {
@@ -207,7 +243,7 @@
 }
 
 .home-contact-container {
-    height: 75vh;
+    height: 50vh;
 }
 
 .home-contact-section {

@@ -1,3 +1,5 @@
+
+
 .cards h1, h2 {
   color: #4d4d4d;
   font-size: 3vw;
@@ -233,14 +235,22 @@
     align-items: center;
   }
 
-  .portfolio__description :nth-child(1) {
+  #txt {
+    width: 50%;
+  }
+
+  #anim {
+    width: 50%;
+  }
+
+  #imag {
     width: 50%;
     margin: 1em;
   }
 
-  .portfolio__description :nth-child(2) {
-    width: 50%;
-    margin: 1em;
+  #imag img{
+    width: 100%;
+    object-fit: contain;
   }
 
   .photo img{
@@ -274,6 +284,29 @@
     border: none;
   }
 
+  .back i{
+    margin: 40px;
+    font-size: 30px;
+    color: #dadada;
+    position: fixed;
+  }
+  
+  .back i:hover {
+    color: #1f98f4;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .portfolio {
+      padding-top: 100px;
+      margin-left: 0px;
+      position: relative;
+    }
+    .back i{
+      margin-left: 0px;
+      padding: 10px;
+    }
+  }
+
 .comingsoon {
   background-color: #dadada;
   height: 100vh;
@@ -284,4 +317,49 @@
 .comingsoon p {
   padding: 1em;
   text-align: center;
+}
+
+.contact__container {
+  background: rgb(249,226,202);
+  background: linear-gradient(180deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
+}
+
+.contact__text {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #4d4d4d;
+}
+
+.links__container {
+  background: rgb(249,226,202);
+  background: linear-gradient(180deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
+}
+
+.links__text {
+    margin: 10vh auto;
+    padding-top: 5em;
+    padding: 2em;
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+    overflow-y: scroll;
+}
+
+.links__text ul {
+  margin-top: 2em;
+}
+
+.links__text li {
+  background: #4d4d4d;
+  margin-top: .5em;
+  padding: .5em;
+  
+}
+
+.links__text a {
+  color: white;
+  text-decoration: none;
 }

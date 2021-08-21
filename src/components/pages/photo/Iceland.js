@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../PhotoCollage.css';
 import { Link } from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 import Image1 from '../../../images/Iceland/iceland_1.jpg';
 import Image2 from '../../../images/Iceland/iceland_2.jpg';
@@ -28,6 +29,19 @@ import Image22 from '../../../images/Iceland/iceland_22.jpg';
 function Iceland() {
   return (
     <>
+      <Helmet>
+          <title>Camila Paleno | Traveling Iceland</title>
+
+          <script src="../../animations/animation.js"></script>
+          <script src="../../animations/lottie.js"></script>
+          <link rel="stylesheet" href="https://use.typekit.net/tmt3ouk.css"></link>
+
+          <meta property="og:image" content="/"/>
+          <meta name="description" content="Photography from my time in Iceland." />
+          <meta property="og:title" content="Camila Paleno | Traveling Iceland"/>
+          <meta property="og:url" content="https://www.imcamila.com" />
+          <meta property="og:description" content="Photography from my time in Iceland." />
+    </Helmet>
       <Link className='back__arrow' to='./Photo'><i class="fas fa-arrow-circle-left"></i></Link>
       <div className='photocollage'>
         <div className='photocollage__title'>

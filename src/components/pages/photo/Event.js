@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../PhotoCollage.css';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 import Image1 from '../../../images/Event/event_1.jpg';
 import Image2 from '../../../images/Event/event_2.jpg';
@@ -34,6 +35,19 @@ import Image26 from '../../../images/Event/event_26.jpg';
 function Event() {
   return (  
     <>
+      <Helmet>
+          <title>Camila Paleno | Graduation and Prom Photography</title>
+
+          <script src="../../animations/animation.js"></script>
+          <script src="../../animations/lottie.js"></script>
+          <link rel="stylesheet" href="https://use.typekit.net/tmt3ouk.css"></link>
+
+          <meta property="og:image" content="/"/>
+          <meta name="description" content="Portrait photography for graduation and prom." />
+          <meta property="og:title" content="Camila Paleno - Costa Rica"/>
+          <meta property="og:url" content="https://www.imcamila.com" />
+          <meta property="og:description" content="Portrait photography for graduation and prom." />
+    </Helmet>
     <Link className='back__arrow' to='./Photo'><i class="fas fa-arrow-circle-left"></i></Link>
     <div className='photocollage'>
         <div className='photocollage__title'>

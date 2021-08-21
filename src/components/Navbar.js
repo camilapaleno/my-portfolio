@@ -49,7 +49,7 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
                                 <i class="fas fa-envelope"></i><p>contact</p>
                             </Link>
                         </li>
@@ -57,13 +57,13 @@ function Navbar() {
                     <ul>
                     <li className='nav-item'>
                             <div className='nav-socials'>
-                                <Link to='/' className='nav-social-links' onClick={closeMobileMenu}>
+                                <Link to='https://github.com/camilapaleno' className='nav-social-links' onClick={closeMobileMenu}>
                                     <i class="fab fa-github"></i>
                                 </Link> 
-                                <Link to='/' className='nav-social-links' onClick={closeMobileMenu}>
+                                <Link to='https://www.linkedin.com/in/camila-paleno-489386101/' className='nav-social-links' onClick={closeMobileMenu}>
                                     <i class="fab fa-linkedin-in"></i>
                                 </Link> 
-                                <Link to='/' className='nav-social-links' onClick={closeMobileMenu}>
+                                <Link to='https://www.instagram.com/pc.mila/' className='nav-social-links' onClick={closeMobileMenu}>
                                     <i class="fab fa-instagram"></i>
                                 </Link> 
                             </div>
