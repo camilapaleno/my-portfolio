@@ -3,7 +3,11 @@ import '../App.css';
 import './HomeSections.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import plane from '../images/plane.png';
+import Lottie from 'react-lottie-player'
+import blub from '../animations/blub.json'
+import blubo from '../animations/blubo.json'
+import staro from '../animations/staro.json'
+import stara from '../animations/stara.json'
 import Fade from 'react-reveal/Fade';
 
 function HeroSection() {
@@ -21,22 +25,23 @@ function HeroSection() {
     return (
         <Fade>
             <div className='hero-container'>
-                
-                <div className='plane' >
-                    <img src={plane} alt='plane' style={{ transform: `translateX(${offsetY * 0.3}px)` }}/>
-                </div>
-                
+                <Fade right><div className='info'>
+                    <p>camila paleno</p>
+                    <p>front end web developer, photographer</p>
+                    <p>hi@imcamila.com</p>
+                </div></Fade>
+                <div className='blub'><Lottie loop animationData={blub} play style={{ transform: `translateY(${offsetY * -0.3}px)` }}></Lottie></div>
+                <div className='blub'><Lottie loop animationData={blubo} play style={{ transform: `translateY(${offsetY * -0.5}px)` }}></Lottie></div>
                 <div className='hero-text'>
-                <h1>Hello!</h1>               
-                <h1>I am Camila.</h1>        
+                    <div id='staro'><Lottie loop animationData={staro} play style={{ width: 40, height: 40 }}></Lottie></div>
+                    <div id='normal'><Fade up cascade ><h1>hi! I'm Camila.</h1></Fade> </div>
+                    <div id='breaker'><h1>hi! I'm Camila.</h1></div>
+                    <div id='stara'><Lottie loop animationData={stara} play style={{ width: 40, height: 40 }}></Lottie></div>
                 </div>    
-                
-                <div className="cloud-1" style={{ transform: `translateX(${offsetY * -0.2}px)` }}></div>
-                <div className="cloud-2" style={{ transform: `translateX(${offsetY * 0.4}px)` }}></div>
-                <div className="cloud-3" style={{ transform: `translateX(${offsetY * 0.1}px)` }}></div>
-                <div className="cloud-4" style={{ transform: `translateX(${offsetY * -0.3}px)` }}></div>  
-                <div id='scroll'><p>psst, scroll down</p></div>
-            </div> 
+                <Fade up><div className='scroll'>
+                    <p>scroll down to learn about what i do.</p>
+                </div></Fade>
+            </div>
         </Fade>
            
 

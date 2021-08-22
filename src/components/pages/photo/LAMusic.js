@@ -8,9 +8,7 @@ import Image3 from '../../../images/LA_Musicians/la_1.jpg';
 import Image4 from '../../../images/LA_Musicians/la_2.jpg';
 import Image5 from '../../../images/LA_Musicians/la_3.jpg';
 import Image6 from '../../../images/LA_Musicians/la_6.jpg';
-import Image7 from '../../../images/LA_Musicians/la_7.jpg';
 import Image8 from '../../../images/LA_Musicians/la_8.jpg';
-import Image9 from '../../../images/LA_Musicians/la_9.jpg';
 import Image10 from '../../../images/LA_Musicians/la_10.jpg';
 import Image11 from '../../../images/LA_Musicians/la_11.jpg';
 
@@ -26,39 +24,39 @@ function LAMusic() {
         </div>
         <div className='photocollage__container'>
           <div className='photocollage__item portrait'>
-            <img src={Image1} />
+            <img src={Image1} alt=' '/>
             <p>Sleep 4ever Album Cover - 2018</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image8} />
+            <img src={Image8} alt=' '/>
             <p>Downtown L.A. - 2017</p>
           </div>
           <div className='photocollage__item portrait'>
             <p>Studio - 2018</p>
-            <img src={Image2} />
+            <img src={Image2} alt=' '/>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image4} />
+            <img src={Image4} alt=' '/>
             <p>Hollywood Hills - 2018</p>
           </div>
           <div className='photocollage__item portrait'>
-            <img src={Image10} />
+            <img src={Image10} alt=' '/>
             <p>Mirror - 2018</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image3} />
+            <img src={Image3} alt=' '/>
             <p>Downtown L.A. - 2018</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image5} />
+            <img src={Image5} alt=' '/>
             <p>Sierra - 2016</p>
           </div>
           <div className='photocollage__item portrait'>
             <p>Colors - 2018</p>
-            <img src={Image6} />
+            <img src={Image6} alt=' '/>
           </div>  
           <div className='photocollage__item landscape'>
-            <img src={Image11} />
+            <img src={Image11} alt=' '/>
             <p>Sierra - 2016</p>
           </div>             
         </div>

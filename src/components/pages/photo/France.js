@@ -3,41 +3,30 @@ import '../../PhotoCollage.css';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import Image1 from '../../../images/France/france_1.jpeg';
 import Image2 from '../../../images/France/france_2.jpeg';
 import Image3 from '../../../images/France/france_3.jpeg';
-import Image4 from '../../../images/France/france_4.jpeg';
-import Image5 from '../../../images/France/france_5.jpeg';
 import Image6 from '../../../images/France/france_6.jpeg';
 import Image7 from '../../../images/France/france_7.jpeg';
 import Image8 from '../../../images/France/france_8.jpeg';
 import Image9 from '../../../images/France/france_9.jpeg';
-import Image10 from '../../../images/France/france_10.jpeg';
-import Image11 from '../../../images/France/france_11.jpeg';
 import Image12 from '../../../images/France/france_12.jpeg';
 import Image13 from '../../../images/France/france_13.jpeg';
 import Image14 from '../../../images/France/france_14.jpeg';
-import Image15 from '../../../images/France/france_15.jpeg';
-import Image16 from '../../../images/France/france_16.jpeg';
 import Image17 from '../../../images/France/france_17.jpeg';
-
 
 function France() {
   return (
     <>
       <Helmet>
           <title>Camila Paleno | Traveling France</title>
-
-          <script src="../../animations/animation.js"></script>
-          <script src="../../animations/lottie.js"></script>
           <link rel="stylesheet" href="https://use.typekit.net/tmt3ouk.css"></link>
-
           <meta property="og:image" content="/"/>
           <meta name="description" content="Photography from my time in France." />
           <meta property="og:title" content="Camila Paleno | Traveling France"/>
           <meta property="og:url" content="https://www.imcamila.com" />
           <meta property="og:description" content="Photography from my time in France." />
     </Helmet>
+
       <Link className='back__arrow' to='./Photo'><i class="fas fa-arrow-circle-left"></i></Link>
       <div className='photocollage'>
         <div className='photocollage__title'>
@@ -46,42 +35,42 @@ function France() {
         </div>
         <div className='photocollage__container'>
         <div className='photocollage__item landscape'>
-            <img src={Image12} />
+            <img src={Image12} alt=' '/>
             <p>Cirque du Gavarnie</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image9} />
+            <img src={Image9} alt=' '/>
             <p>Cirque du Gavarnie</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image13} />
+            <img src={Image13} alt=' '/>
             <p>Cirque du Gavarnie</p>
           </div>
           <div className='photocollage__item portrait'>
-            <img src={Image14} />
+            <img src={Image14} alt=' '/>
             <p>Cirque du Gavarnie</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image6} />
+            <img src={Image6} alt=' '/>
           </div>       
           <div className='photocollage__item landscape'>
-            <img src={Image7} />
+            <img src={Image7} alt=' ' />
             <p>Kiosque du Gouffre</p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image2} />
+            <img src={Image2} alt=' '/>
             <p>Brussels Bike</p>
           </div>    
           <div className='photocollage__item landscape'>
-            <img src={Image3} />
+            <img src={Image3} alt=' '/>
             <p>Brussels Architecture</p>
           </div>  
           <div className='photocollage__item landscape'>
-            <img src={Image8} />
+            <img src={Image8} alt=' '/>
             <p>Castle Views</p>
           </div>  
           <div className='photocollage__item landscape'>
-            <img src={Image17} />
+            <img src={Image17} alt=' '/>
             <p>Streets</p>
           </div>  
         </div>

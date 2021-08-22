@@ -1,22 +1,11 @@
 import React from 'react';
 import '../App.css';
 import './HomeSections.css';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import sun from '../images/little_man.png';
 import Fade from 'react-reveal/Fade';
 
 function ContactSection() {
-
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      }
-    }, []);
 
     return (
         <div className='home-container contact home-contact-container'>
@@ -28,7 +17,6 @@ function ContactSection() {
                         <div className='contact__text'>
                             <h1>let's chat!</h1>
                             <p>shoot me an email at hi@imcamila.com</p>
-                            <p>or give me a call at 323 456 7089</p>
                         </div>
                     </div>
 {/*                 <h2>contact</h2>    <form>
@@ -48,8 +36,8 @@ function ContactSection() {
 
             </div>
             <div className='sun'>
-                    <img src={sun} alt='sun'/>
-                </div>
+                    <Link to='/curse'><img src={sun} alt='sun'/></Link>
+            </div>
         </div>
     )
 }

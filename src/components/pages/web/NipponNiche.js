@@ -3,9 +3,6 @@ import '../../Pages.css';
 import Portfolios from '../../WebPortfolios';
 import Example from '../../../images/example.jpg';
 import Spread from '../../../images/nn_spread.png';
-import Image1 from '../../../images/bxb_image1.jpg';
-import Image2 from '../../../images/bxb_image2.jpg';
-
 
 function NipponNiche() {
   return (

@@ -2,8 +2,7 @@
     height: 100vh;
     margin-left: 130px;
     position: relative;
-    background: rgb(249,226,202);
-    background: linear-gradient(180deg, rgba(249,226,202,1) 0%, rgba(250,218,231,1) 100%);
+    overflow: hidden;
 }
 
 .hero-text {
@@ -12,34 +11,110 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: visible;
 }
 
-.hero-text h1{
+.hero-text h1, .hero-text span{
     font-family: Rozha One, sans-serif;
     color: white;
     font-size: 4vw;
     text-align: left;
 }
 
-#scroll {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+.blub {
+    position: absolute;
+    z-index: -999;
+    width: 65%;
+    margin: 0;
+    margin-left: -1em;
+    margin-top: -1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#staro {
+    margin-left: -2em;
     display: none;
 }
 
-#scroll p {
+#stara {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -2em;
+    display: none;
+}
+
+.info {
+    color: #f8b690;
+    font-size: 1vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    padding: 1em;
+}
+
+.scroll {
+    color: #f8b690;
+    font-size: 1vw;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    width: 100%;
+    text-align: center;
     padding: 1em;
-    color: #4d4d4d;
-    font-size: .5em;
+}
+
+#breaker {
+    display: none;
 }
 
 @media screen and (max-width: 960px) {
-    .hero-text h1{
-        font-size: 3em;
+
+    #breaker {
+        display: block;
+
+    } 
+
+    #normal {
+        display: none;
+    }
+    
+    .hero-text {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-text h1, .hero-text span{
+        font-family: Rozha One, sans-serif;
+        color: white;
+        font-size: 5.5em;
+        text-align: left;
+    }
+
+    .blub {
+        position: absolute;
+        z-index: -999;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .blub {
+        position: absolute;
+        z-index: -999;
+        width: 200%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -50,65 +125,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.cloud-1 {
-    background-image: url(../images/cloud-1.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-
-}
-
-.cloud-2 {
-    background-image: url(../images/cloud-2.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-
-}
-
-.cloud-3 {
-    background-image: url(../images/cloud-3.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-}
-
-.cloud-4 {
-    background-image: url(../images/cloud-4.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-}
-
-.plane img{
-    object-fit: contain;
-    margin-left: -60vw;
-    margin-bottom: -20vh;
-}
-
-@media screen and (max-width: 960px) {
-    .plane img{
-        display: none;
-    }
-
-    .cloud-2 {
-        background-position: center;
-    }
-
-    .cloud-1, .cloud-4 {
-        background-position: 20%;
-    }
-
-    .cloud-3 {
-        background-position: 80%;
-    }
-    
 }
 
 @media screen and (max-width: 960px) {
@@ -131,7 +147,7 @@
 }
 
 .web {
-    background-color: #f5f6f7;
+    background-color: #FFF;
 }
 
 .web a {
@@ -141,11 +157,11 @@
 }
 
 .web a:hover {
-    color: #f8d490;
+    color: #f8b690;
 }
 
 .photo {
-    background-color: #FFF;
+    background-color: #f5f6f7;
 }
 
 .photo a {
@@ -155,7 +171,7 @@
 }
 
 .photo a:hover {
-    color: #f8d490;
+    color: #f8b690;
 }
 
 .contact {
@@ -244,6 +260,7 @@
 
 .home-contact-container {
     height: 50vh;
+    background-color: #FFF;
 }
 
 .home-contact-section {
@@ -256,13 +273,13 @@
     bottom: 0; 
     position: absolute;
     width: 100%;
+    margin-left: -5px;
 }
 
 .sun img {
     display: block;
     width: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 textarea {
@@ -286,4 +303,19 @@ textarea {
     padding: 5px;
     border-radius: 0;
     border: #FFF;
+}
+
+.curse {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 120vh;
+    overflow: hidden;
+}
+
+.curse img {
+    object-fit: cover;
+    height: 100%;
 }

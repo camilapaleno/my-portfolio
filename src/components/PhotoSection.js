@@ -1,23 +1,10 @@
- 
-import './HomeSections.css';
-import { useState } from 'react';
-import { useEffect } from 'react';
+ import './HomeSections.css';
 import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 import Lottie from 'react-lottie-player'
 import camera from '../animations/camera.json'
 
 function PhotoSection() {
-
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      }
-    }, []);
 
     return (
         <div className='home-container photo'>

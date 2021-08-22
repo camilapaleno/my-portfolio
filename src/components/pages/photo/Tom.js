@@ -3,7 +3,6 @@ import '../../PhotoCollage.css';
 import { Link } from 'react-router-dom';
 
 import Image1 from '../../../images/Tom/tom_1.jpg';
-import Image2 from '../../../images/Tom/tom_2.jpg';
 import Image3 from '../../../images/Tom/tom_3.jpg';
 import Image4 from '../../../images/Tom/tom_4.jpg';
 import Image5 from '../../../images/Tom/tom_5.jpg';
@@ -12,7 +11,6 @@ import Image7 from '../../../images/Tom/tom_7.jpg';
 import Image8 from '../../../images/Tom/tom_8.jpg';
 import Image9 from '../../../images/Tom/tom_9.jpg';
 import Image10 from '../../../images/Tom/tom_10.jpg';
-
 
 function Tom() {
   return (
@@ -25,40 +23,40 @@ function Tom() {
       </div>
       <div className='photocollage__container'>
       <div className='photocollage__item portrait'>
-          <img src={Image1} />
+          <img src={Image1} alt=' '/>
           <p>Flowers - 2020</p>
         </div>
         <div className='photocollage__item portrait'>
           <p>Roadtrip - 2020</p>
-          <img src={Image9} />
+          <img src={Image9} alt=' '/>
           
         </div>
         <div className='photocollage__item landscape'>
-          <img src={Image7} />
+          <img src={Image7} alt=' '/>
           <p>Top of the World - 2020</p>
         </div>
         <div className='photocollage__item landscape'>
-          <img src={Image5} />
+          <img src={Image5} alt=' '/>
           <p>Colored Lights - 2020</p>
         </div>
         <div className='photocollage__item portrait'>
-          <img src={Image3} />
+          <img src={Image3} alt=' '/>
           <p>Westwood Lights - 2020</p>
         </div>         
         <div className='photocollage__item landscape'>
-          <img src={Image8} />
+          <img src={Image8} alt=' '/>
           <p>Portrait - 2020</p>
         </div>
         <div className='photocollage__item portrait'>
           <p>Flower Field - 2020</p>
-          <img src={Image10} />
+          <img src={Image10} alt=' '/>
         </div>    
         <div className='photocollage__item landscape'>
-          <img src={Image4} />
+          <img src={Image4} alt=' '/>
           <p>Colored Lights - 2020</p>
         </div>  
         <div className='photocollage__item landscape'>
-          <img src={Image6} />
+          <img src={Image6} alt=' '/>
           <p>Colored Lights - 2020</p>
         </div>  
       </div>

@@ -3,39 +3,23 @@ import '../../PhotoCollage.css';
 import { Link } from 'react-router-dom';
 import Helmet from 'react-helmet';
 
-import Image1 from '../../../images/Iceland/iceland_1.jpg';
 import Image2 from '../../../images/Iceland/iceland_2.jpg';
 import Image3 from '../../../images/Iceland/iceland_3.jpg';
-import Image4 from '../../../images/Iceland/iceland_4.jpg';
 import Image5 from '../../../images/Iceland/iceland_5.jpg';
 import Image6 from '../../../images/Iceland/iceland_6.jpg';
 import Image7 from '../../../images/Iceland/iceland_7.jpg';
-import Image8 from '../../../images/Iceland/iceland_8.jpg';
-import Image9 from '../../../images/Iceland/iceland_9.jpg';
-import Image10 from '../../../images/Iceland/iceland_10.jpg';
 import Image11 from '../../../images/Iceland/iceland_11.jpg';
 import Image12 from '../../../images/Iceland/iceland_12.jpg';
 import Image13 from '../../../images/Iceland/iceland_13.jpg';
-import Image14 from '../../../images/Iceland/iceland_14.jpg';
-import Image15 from '../../../images/Iceland/iceland_15.jpg';
-import Image16 from '../../../images/Iceland/iceland_16.jpg';
-import Image17 from '../../../images/Iceland/iceland_17.jpg';
 import Image18 from '../../../images/Iceland/iceland_18.jpg';
-import Image19 from '../../../images/Iceland/iceland_19.jpg';
-import Image20 from '../../../images/Iceland/iceland_20.jpg';
 import Image21 from '../../../images/Iceland/iceland_21.jpg';
-import Image22 from '../../../images/Iceland/iceland_22.jpg';
 
 function Iceland() {
   return (
     <>
       <Helmet>
           <title>Camila Paleno | Traveling Iceland</title>
-
-          <script src="../../animations/animation.js"></script>
-          <script src="../../animations/lottie.js"></script>
           <link rel="stylesheet" href="https://use.typekit.net/tmt3ouk.css"></link>
-
           <meta property="og:image" content="/"/>
           <meta name="description" content="Photography from my time in Iceland." />
           <meta property="og:title" content="Camila Paleno | Traveling Iceland"/>
@@ -50,42 +34,42 @@ function Iceland() {
         </div>
         <div className='photocollage__container'>
         <div className='photocollage__item landscape'>
-            <img src={Image13} />
+            <img src={Image13} alt=' '/>
             <p></p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image21} />
+            <img src={Image21} alt=' '/>
             <p></p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image11} />
+            <img src={Image11} alt=' '/>
             <p></p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image12} />
+            <img src={Image12} alt=' '/>
             <p></p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image6} />
+            <img src={Image6} alt=' '/>
           </div>       
           <div className='photocollage__item landscape'>
-            <img src={Image7} />
+            <img src={Image7} alt=' '/>
             <p></p>
           </div>
           <div className='photocollage__item landscape'>
-            <img src={Image2} />
+            <img src={Image2} alt=' '/>
             <p></p>
           </div>    
           <div className='photocollage__item landscape'>
-            <img src={Image3} />
+            <img src={Image3} alt=' '/>
             <p></p>
           </div>  
           <div className='photocollage__item landscape'>
-            <img src={Image18} />
+            <img src={Image18} alt=' '/>
             <p></p>
           </div>  
           <div className='photocollage__item landscape'>
-            <img src={Image5} />
+            <img src={Image5} alt=' '/>
             <p></p>
           </div>  
         </div>

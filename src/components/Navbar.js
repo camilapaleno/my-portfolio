@@ -11,8 +11,7 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     return (
-        <>
- 
+        <Fade left>
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
@@ -57,23 +56,21 @@ function Navbar() {
                     <ul>
                     <li className='nav-item'>
                             <div className='nav-socials'>
-                                <Link to='https://github.com/camilapaleno' className='nav-social-links' onClick={closeMobileMenu}>
+                                <a href='https://github.com/camilapaleno' className='nav-social-links' onClick={closeMobileMenu}>
                                     <i class="fab fa-github"></i>
-                                </Link> 
-                                <Link to='https://www.linkedin.com/in/camila-paleno-489386101/' className='nav-social-links' onClick={closeMobileMenu}>
+                                </a> 
+                                <a href='https://www.linkedin.com/in/camila-paleno-489386101/' className='nav-social-links' onClick={closeMobileMenu}>
                                     <i class="fab fa-linkedin-in"></i>
-                                </Link> 
-                                <Link to='https://www.instagram.com/pc.mila/' className='nav-social-links' onClick={closeMobileMenu}>
+                                </a> 
+                                <a href='https://www.instagram.com/pc.mila/' className='nav-social-links' onClick={closeMobileMenu}>
                                     <i class="fab fa-instagram"></i>
-                                </Link> 
+                                </a> 
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
-
-
-        </>
+        </Fade>
     )
 }
 

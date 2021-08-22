@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import {Helmet} from "react-helmet";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Switch, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Home from './components/pages/Home';
 import Web from './components/pages/Web';
@@ -28,6 +28,7 @@ import Spain from './components/pages/photo/Spain';
 import Iceland from './components/pages/photo/Iceland';
 import Contact from './components/pages/Contact';
 import Links from './components/pages/Links';
+import Curse from './components/pages/Curse';
 
 function App() {
 
@@ -50,7 +51,7 @@ function App() {
       <meta property="og:description" content="Clean and modern website design and development for your business." />
     </Helmet>
 
-    <Router>
+    <BrowserRouter basename ="/my-portfolio">
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home}/>
@@ -78,8 +79,9 @@ function App() {
         <Route path="/iceland" exact component={Iceland}/>
         <Route path="/contact" exact component={Contact}/>
         <Route path="/links" exact component={Links}/>
+        <Route path="/curse" exact component={Curse}/>
       </Switch>
-    </Router>
+    </BrowserRouter>
     </>
   );
 }

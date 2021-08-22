@@ -1,24 +1,12 @@
 import React from 'react';
 import '../App.css';
 import './HomeSections.css';
-import { useState } from 'react';
-import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie-player'
 import computer from '../animations/computer.json'
 import Fade from 'react-reveal/Fade';
 
 function WebSection() {
-
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      }
-    }, []);
 
     return (
         <div className='home-container web'>

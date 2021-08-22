@@ -2,7 +2,6 @@
 import React from 'react';
 import './Pages.css';
 import CardItem from './CardItem';
-import { Link } from 'react-router-dom';
 import Example from '../images/example.jpg';
 import BPS from '../images/bps_preview.png';
 import BXB from '../images/bxb_preview.png';
@@ -15,9 +14,9 @@ function WebCards() {
   return (
     <Fade>
     <div className='cards'>
-      <Link to="https://github.com/camilapaleno" className='socials__container'>
+      <a href="https://github.com/camilapaleno" className='socials__container'>
           <i class="fab fa-github"></i>
-      </Link>  
+      </a> 
       <div className='cards__container'>
         <div className='title__wrapper'>
             <h1>Web Development &amp; Design Portfolio</h1><br/>
