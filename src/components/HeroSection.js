@@ -6,8 +6,6 @@ import { useEffect } from 'react';
 import Lottie from 'react-lottie-player'
 import blub from '../animations/blub.json'
 import blubo from '../animations/blubo.json'
-import staro from '../animations/staro.json'
-import stara from '../animations/stara.json'
 import Fade from 'react-reveal/Fade';
 
 function HeroSection() {
@@ -33,10 +31,8 @@ function HeroSection() {
                 <div className='blub'><Lottie loop animationData={blub} play style={{ transform: `translateY(${offsetY * -0.3}px)` }}></Lottie></div>
                 <div className='blub'><Lottie loop animationData={blubo} play style={{ transform: `translateY(${offsetY * -0.5}px)` }}></Lottie></div>
                 <div className='hero-text'>
-                    <div id='staro'><Lottie loop animationData={staro} play style={{ width: 40, height: 40 }}></Lottie></div>
                     <div id='normal'><Fade up cascade ><h1>hi! I'm Camila.</h1></Fade> </div>
                     <div id='breaker'><h1>hi! I'm Camila.</h1></div>
-                    <div id='stara'><Lottie loop animationData={stara} play style={{ width: 40, height: 40 }}></Lottie></div>
                 </div>    
                 <Fade up><div className='scroll'>
                     <p>scroll down to learn about what i do.</p>

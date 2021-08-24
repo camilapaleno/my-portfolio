@@ -2,7 +2,6 @@
 import React from 'react';
 import './Pages.css';
 import CardItem from './CardItem';
-import { Link } from 'react-router-dom';
 import Example from '../images/example.jpg';
 import Tom from '../images/Tom/tom_1.jpg';
 import Mariana from '../images/Mariana/mariana_5.jpg';
@@ -21,9 +20,9 @@ function PhotoCards() {
   return (
     <Fade>
     <div className='cards'>
-      <Link to="https://instagram.com/pc.mila" className='socials__container'>
+      <a href="https://instagram.com/pc.mila" className='socials__container'>
         <i class="fab fa-instagram"></i>
-      </Link>  
+      </a>  
       <div className='cards__container'>
         <div className='title__wrapper'>
             <h1>Portrait &amp; Product Photo Portfolio</h1><br/>
@@ -107,7 +106,7 @@ function PhotoCards() {
                 text='Mexico '
                 label='Travel'
                 color='green'
-                description='2021 - Solo trip #2. **page coming soon**'
+                description='2021 - Solo trip #2.'
                 path='/mexico'
               />
               <CardItem
@@ -115,7 +114,7 @@ function PhotoCards() {
                 text='Spain'
                 label='Travel'
                 color='green'
-                description='2019 - Empanadas. **page coming soon**'
+                description='2019 - Empanadas.'
                 path='/spain'
               />
             </ul>
@@ -125,7 +124,7 @@ function PhotoCards() {
               text='Iceland'
               label='Travel'
               color='green'
-              description='2017 - First trip without mom &amp; dad!  **page coming soon**'
+              description='2017 - First trip without mom &amp; dad! '
               path='/iceland'
             />
             <CardItem
@@ -133,7 +132,7 @@ function PhotoCards() {
               text='Thailand'
               label='Travel'
               color='green'
-              description='2019 - First solo trip.  **page coming soon**'
+              description='2019 - First solo trip. '
               path='/thailand'
             />
             </ul>

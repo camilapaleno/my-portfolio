@@ -2,6 +2,7 @@ import React from 'react';
 import '../../Pages.css';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Fade from 'react-reveal/Fade';
 import Spread from '../../../images/bxb_spread.png';
 import Image1 from '../../../images/bxb_image1.jpg';
 
@@ -20,6 +21,7 @@ function BXB() {
         <meta property="og:url" content="https://www.imcamila.com" />
         <meta property="og:description" content="Clean and modern website design and development for your business." />
       </Helmet>
+      <Fade>
         <div className='portfolio'>
         <Link className='back__arrow' to='./Web'><i class="fas fa-arrow-circle-left"></i></Link>
         <div className='portfolio__container'>
@@ -34,7 +36,9 @@ function BXB() {
             <p>Here is a spread of the BXB Home page. I mainly just used HTML, CSS. It's a single page. This is the first site I ever made, so when they launch, I'm going to work on improving it.</p><br /><br /><br />
             <img className='portfolio__show' src={Spread} alt='portfolio spread'/>
         </div>
-        </div>
+        </div>        
+      </Fade>
+
       </>
   );
 }

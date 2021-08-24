@@ -2,6 +2,7 @@ import React from 'react';
 import {Helmet} from "react-helmet";
 import { Link } from 'react-router-dom';
 import Lottie from 'react-lottie-player';
+import Fade from 'react-reveal/Fade';
 import '../../Pages.css';
 import Spread from '../../../images/bps_spread.png';
 import hello from '../../../animations/celebration.json';
@@ -19,6 +20,7 @@ function BPS() {
         <meta property="og:description" content="Clean and modern website design and development for your business." />
       </Helmet>
 
+      <Fade>
       <div className='portfolio'>
         <Link className='back' to='./Web'><i class="fas fa-arrow-circle-left"></i></Link>
         <div className='portfolio__container'>
@@ -38,6 +40,8 @@ function BPS() {
             <img className='portfolio__show' src={Spread} alt='portfolio spread'/>
         </div>
       </div>
+      </Fade>
+
     </>
   );
 }

@@ -3,7 +3,6 @@ import '../Pages.css';
 import Fade from 'react-reveal/Fade';
 import { Helmet } from 'react-helmet';
 
-
 function Contact () {
     return (
         <Fade>
@@ -22,9 +21,8 @@ function Contact () {
             </Helmet>
             <div className='contact__container'>
                 <div className='contact__text'>
-                    <h1>let's chat!</h1>
-                    <p>shoot me an email at hi@imcamila.com</p>
-                    <p>give me a call at 323 456 7089</p>
+                    <h1>let's work together!</h1>
+                    <p>send me an email at hi@imcamila.com</p>
                 </div>
             </div>
         </Fade>

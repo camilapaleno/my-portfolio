@@ -35,6 +35,10 @@
   .navbar-logo img {
     width: 75px;
   }
+
+  .navbar-logo div {
+    overflow: hidden;
+  }
   
   .fa-typo3 {
     margin-left: 0.5rem;

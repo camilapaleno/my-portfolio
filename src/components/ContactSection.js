@@ -3,6 +3,7 @@ import '../App.css';
 import './HomeSections.css';
 import { Link } from 'react-router-dom';
 import sun from '../images/little_man.png';
+import bub from '../images/bub.png';
 import Fade from 'react-reveal/Fade';
 
 function ContactSection() {
@@ -10,13 +11,13 @@ function ContactSection() {
     return (
         <div className='home-container contact home-contact-container'>
             <div className='home-section home-contact-section'>
+                <div className='bub'><img src={bub} alt=' '/></div>
                 <Fade up>
                 <div className='home-text'>
-                    
                     <div className='contact__container'>
                         <div className='contact__text'>
-                            <h1>let's chat!</h1>
-                            <p>shoot me an email at hi@imcamila.com</p>
+                            <p>let's work together!</p>
+                            <p>send me an email at hi@imcamila.com</p>
                         </div>
                     </div>
 {/*                 <h2>contact</h2>    <form>
